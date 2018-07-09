@@ -144,5 +144,28 @@ class PreventasS_model extends CI_Model
 		}
 	}
 
+	public function remisionOrdenPrevS($cliente,$ruta,$fecha){
+		$this->db->where("Preventa",1);
+		$this->db->where("Cliente",$cliente);
+		$this->db->where("Ruta",$ruta);
+		$this->db->where("FechaEntrega",$fecha);
+		$query = $this->db->get("view_rem_OrdS_Cli");
+		if ($query->num_rows()>0) {
+			return $query->result_array();
+		}
+		return 0;
+	}
+
+	public function remisionOrdenPrevSRutas($ruta,$fecha){
+		$this->db->where("Preventa",1);
+		$this->db->where("Usuario",$this->session->userdata("id"));
+		$this->db->where("Ruta",$ruta);
+		$this->db->where("FechaEntrega",$fecha);
+		$query = $this->db->get("ordenes_s");
+		if ($query->num_rows()>0) {
+			return $query->result_array();
+		}
+		return 0;
+	}
 }
 ?>

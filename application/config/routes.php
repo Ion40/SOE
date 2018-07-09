@@ -137,4 +137,5 @@ $route["DetallesOrdPrevSXCliente/(:any)/(:any)"] = "PreventasS_controller/Detall
 $route["DetallesOrderPrevSModal/(:any)/(:any)"] = "PreventasS_controller/DetallesModal/$1/$2";
 $route["ElimUnoPrevS/(:any)"]  = "PreventasS_controller/eliminarUnoPrevS/$1";
 $route["ActualizarOrdenPrevS"]  = "PreventasS_controller/actualizarOrdenPrevS";
-
+$route["remisionOrdenPreSCliente/(:any)/(:any)/(:any)"] = "PreventasS_controller/remisionOrdenPrevScliente/$1/$2/$3";
+$route["remisionOrdenPrevSRutas/(:any)/(:any)"] = "PreventasS_controller/remisionOrdenPrevSRutas/$1/$2";

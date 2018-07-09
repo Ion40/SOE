@@ -274,7 +274,7 @@ function detalle(callback,fecha,div){
 						"<td>"+item["LBS"]+"</td>"+
 						"<td class='center'><a class='btn-floating blue dropdown-trigger' data-target='dropdown"+item["Ruta"]+"' href='javascript:void(0)'><i class='material-icons'>menu</i></a></td>"+
 						'<ul id="dropdown'+item["Ruta"]+'" class="dropdown-content">'+
-						'<li><a target="_blank" href="remisionOrdenSRutas/'+item["Ruta"]+'/'+item["FechaEntrega"]+'">Remision</a></li>'+
+						'<li><a target="_blank" href="remisionOrdenPrevSRutas/'+item["Ruta"]+'/'+item["FechaEntrega"]+'">Remision</a></li>'+
 						'</ul>';
 				});
 				callback($("<table id='detOrdenPrevS' class='table striped'>"+ thead + tbody + "</table>")).show();
@@ -512,5 +512,13 @@ function actualizarOrden(){
 		}
 	});
 }
+
+function remcli (cliente,ruta,fecha) {
+	var loc = window.location;
+	var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 3);
+	var ruta1 = loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
+	this.location.href = ruta1+"../remisionOrdenPreSCliente/"+cliente+"/"+ruta+"/"+fecha;
+}
+
 
 </script>

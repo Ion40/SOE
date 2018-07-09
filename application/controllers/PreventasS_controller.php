@@ -92,6 +92,23 @@ class PreventasS_controller extends CI_Controller
 		print_r($OrdenEdit);
 	}
 
+	public function remisionOrdenPrevScliente($cliente,$ruta,$fecha){
+		$data["cons"] = $this->PreventasS_model->ultimoConsRemisionS($ruta,$fecha);
+		$data["datos"] = $this->PreventasS_model->remisionOrdenPrevS($cliente,$ruta,$fecha);
+		$this->load->view("Preventas_Super/Remision_PrevS_cliente",$data);
+		$this->Usuarios_model->InsertLog($this->session->userdata("id"), $this->session->userdata("NameU"),
+			"Generó una nueva remision de orden con ruta ".$ruta." y fecha ".$fecha." para el cliente ".$cliente." ");
+	}
+
+	public function remisionOrdenPrevSRutas($ruta,$fecha)
+	{
+		$data["cons"] = $this->PreventasS_model->ultimoConsRemisionS($ruta,$fecha);
+		$data["datos"] = $this->PreventasS_model->remisionOrdenPrevSRutas($ruta,$fecha);
+		$this->load->view("Preventas_Super/Remision_PrevS",$data);
+		$this->Usuarios_model->InsertLog($this->session->userdata("id"), $this->session->userdata("NameU"),
+			"Generó una nueva remision de orden con ruta ".$ruta." y fecha ".$fecha."");
+	}
+
 
 }
 ?>
