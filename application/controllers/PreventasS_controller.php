@@ -20,7 +20,23 @@ class PreventasS_controller extends CI_Controller
 		$this->load->view("header/header");
 		$this->load->view("Preventas_Super/Preventas_S");
 		$this->load->view("footer/footer");
-		$this->load->view("jsView/jsOrdenesS");
+		$this->load->view("jsView/jsPreventasS");
+	}
+
+	public function newPreventaS()
+	{
+		$data["rutas"] = $this->OrdenesS_model->getRutas();
+		$data["prod"] = $this->OrdenesS_model->listarProductos();
+		$data["clientes"] = $this->OrdenesS_model->getCliente();
+		$this->load->view("header/header");
+		$this->load->view("Preventas_Super/New_Prev_S",$data);
+		$this->load->view("footer/footer");
+		$this->load->view("jsView/jsPreventasS");
+	}
+
+	public function guardarPreventaS()
+	{
+		$this->PreventasS_model->guardarPreventaS($this->input->get_post("preventasS"));
 	}
 
 }

@@ -127,3 +127,5 @@ $route["remisionOrdenSCliente/(:any)/(:any)/(:any)"] = "OrdenesS_controller/remi
 $route["LlavesOrdS"]  = "OrdenesS_controller/incrementarLlaveS";
 
 /***************************************************************************************************/
+$route["PreventasS"] = "PreventasS_controller";
+$route["NewPreventS"] = "PreventasS_controller/newPreventaS";

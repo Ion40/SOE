@@ -247,6 +247,9 @@
                                 <a href="Orders">Ordenes</a>
                             </li>
                             <li>
+                            	<a href="PreventasS">Preventas</a>
+                            </li>
+                            <li>
                                  <a href="Inventario">Inventario</a>
                             </li>
                             <li>
