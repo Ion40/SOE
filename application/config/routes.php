@@ -125,7 +125,16 @@ $route["ActualizarOrdenS"] = "OrdenesS_controller/actualizarOrdenS";
 $route["remisionOrdenSRutas/(:any)/(:any)"] = "OrdenesS_controller/remisionOrdenSRutas/$1/$2";
 $route["remisionOrdenSCliente/(:any)/(:any)/(:any)"] = "OrdenesS_controller/remisionOrdenScliente/$1/$2/$3";
 $route["LlavesOrdS"]  = "OrdenesS_controller/incrementarLlaveS";
+$route["ElimUnoS/(:any)"]  = "OrdenesS_controller/eliminarUnoS/$1";
 
 /***************************************************************************************************/
 $route["PreventasS"] = "PreventasS_controller";
 $route["NewPreventS"] = "PreventasS_controller/newPreventaS";
+$route["SaveOrdPrevS"] = "PreventasS_controller/guardarPreventaS";
+$route["DetOrdenPrevS/(:any)"] = "PreventasS_controller/getDetalleOrdenPrevS/$1";
+$route["DetallesPreventas/(:any)/(:any)"] = "PreventasS_controller/detalles_OrdenesPrevS/$1/$2";
+$route["DetallesOrdPrevSXCliente/(:any)/(:any)"] = "PreventasS_controller/DetallesOrdenPrevSXCliente/$1/$2";
+$route["DetallesOrderPrevSModal/(:any)/(:any)"] = "PreventasS_controller/DetallesModal/$1/$2";
+$route["ElimUnoPrevS/(:any)"]  = "PreventasS_controller/eliminarUnoPrevS/$1";
+$route["ActualizarOrdenPrevS"]  = "PreventasS_controller/actualizarOrdenPrevS";
+

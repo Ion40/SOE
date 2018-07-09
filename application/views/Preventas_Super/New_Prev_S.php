@@ -9,7 +9,7 @@
 					<div class="card-content">
 						<div class="card-title">
 							<h6 class="center" style="margin-top:;font-weight:bold;">
-								NUEVA ORDEN DE ENTREGA
+								NUEVA ORDEN DE ENTREGA (PREVENTA)
 							</h6>
 						</div>
 						<div class="container">
@@ -35,7 +35,7 @@
 					<i class="material-icons iconSearch">search</i>
 				</div>
 				<div class="input-field col s12 m6 l4">
-					<input id="BuscarNewOrdenes" type="text" placeholder="Buscar">
+					<input id="txtBuscar1" type="text" placeholder="Buscar">
 					<label for="search"></label>
 				</div>
 			</div>
@@ -45,7 +45,7 @@
 			<div class="row">
 				<div class="col s6 m6 l6" style="text-align:left;">
 					<div id="retornarP">
-						<a data-tooltip='REGRESAR' href="Orders" class="purple-text darken-1 tooltipped">
+						<a data-tooltip='REGRESAR' href="PreventasS" class="purple-text darken-1 tooltipped">
 							<i class="waves-effect waves-light material-icons titulosGen">keyboard_backspace</i>
 						</a>
 					</div>

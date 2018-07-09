@@ -42,7 +42,7 @@ setlocale(LC_ALL,'Spanish_Nicaragua');
 					<i class="material-icons iconSearch">search</i>
 				</div>
 				<div class="input-field col s12 m6 l4">
-					<input id="BuscarOrdenes_S" type="text" placeholder="Buscar">
+					<input id="txtBuscar" type="text" placeholder="Buscar">
 					<label for="search"></label>
 				</div>
 			</div>
@@ -62,7 +62,7 @@ setlocale(LC_ALL,'Spanish_Nicaragua');
 					<div class="card">
 						<div class="card-content">
 							<div class="div-cont">
-								<table id="tblOrdenesS" class="table striped">
+								<table id="tblOrdenesPreS" class="table striped">
 									<thead>
 									<tr class="tblcabecera">
 										<th class="center-align">Fecha</th>
@@ -73,7 +73,7 @@ setlocale(LC_ALL,'Spanish_Nicaragua');
 									</tr>
 									</thead>
 									<tbody>
-									<!--
+									<?php
 									if(!$ordenes){}
 									else{
 										foreach ($ordenes as $key) {
@@ -105,19 +105,19 @@ setlocale(LC_ALL,'Spanish_Nicaragua');
 																	<td class='center-align'>
 																		<a class='dropdown-trigger btn-floating teal' href='#' data-target='dropdown".$key["FechaEntrega"]."'><i class='material-icons'>edit</i></a>
 			
-																			Dropdown Structure
+																			<!--Dropdown Structure-->
 																			<ul id='dropdown".$key["FechaEntrega"]."' class='dropdown-content'>";
 											if ($key["Estado"] == 0) {
-												echo "<li><a href='javascript:void(0)'>Visto</a></li>";
+												echo "<li><a href='javascript:void(0)' onclick='ChangeState(".'"'.$key["FechaEntrega"].'","'.$key["Usuario"].'","'.$key["Estado"].'"'.")'>Visto</a></li>";
 											}else{
-												echo"<li><a href='javascript:void(0)'>Pendiente</a></li>";
+												echo"<li><a href='javascript:void(0)' onclick='ChangeState(".'"'.$key["FechaEntrega"].'","'.$key["Usuario"].'","'.$key["Estado"].'"'.")'>Pendiente</a></li>";
 											}
 											echo "</ul>
-															</td>	
+												    </td>	
 													</tr>";
 										}
 									}
-									  -->
+									  ?>
 									</tbody>
 								</table>
 							</div>

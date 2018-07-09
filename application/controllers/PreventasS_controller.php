@@ -17,8 +17,9 @@ class PreventasS_controller extends CI_Controller
 
 	public function index()
 	{
+		$data["ordenes"] = $this->PreventasS_model->getPreventasS();
 		$this->load->view("header/header");
-		$this->load->view("Preventas_Super/Preventas_S");
+		$this->load->view("Preventas_Super/Preventas_S",$data);
 		$this->load->view("footer/footer");
 		$this->load->view("jsView/jsPreventasS");
 	}
@@ -34,10 +35,63 @@ class PreventasS_controller extends CI_Controller
 		$this->load->view("jsView/jsPreventasS");
 	}
 
+	public function detalles_OrdenesPrevS($ruta,$fecha)
+	{
+		$data["detalles"] = $this->PreventasS_model->Detalles($ruta,$fecha);
+		$this->load->view("header/header");
+		$this->load->view("Preventas_Super/Detalles_PrevS",$data);
+		$this->load->view("footer/footer");
+		$this->load->view("jsView/jsPreventasS");
+	}
+
+
 	public function guardarPreventaS()
 	{
 		$this->PreventasS_model->guardarPreventaS($this->input->get_post("preventasS"));
 	}
+
+	public function getDetalleOrdenPrevS($fecha)
+	{
+		$json = array();
+		$query = $this->PreventasS_model->getDetalleOrdenPrevS($fecha);
+		if ($query!=false)
+		{
+			foreach ($query as $item) {
+				$data = array(
+					"Ruta" => $item["Ruta"],
+					"FechaEntrega" => $item["FechaEntrega"],
+					"Unidades" => number_format($item["Unidades"],2),
+					"LBS" => number_format($item["LBS"],2)
+				);
+				$json[] = $data;
+			}
+			echo json_encode($json);
+		} else{
+			echo "false";
+		}
+	}
+
+	public function DetallesModal($fecha,$idcliente)
+	{
+		$this->PreventasS_model->DetallesModal($fecha,$idcliente);
+	}
+
+	public function DetallesOrdenPrevSXCliente($cliente,$fecha)
+	{
+		$this->PreventasS_model->DetallesOrdenPrevSXCliente($cliente,$fecha);
+	}
+
+	public function eliminarUnoPrevS($id){
+		$this->PreventasS_model->eliminarUno($id);
+	}
+
+	public function actualizarOrdenPrevS()
+	{
+		$OrdenEdit = $this->input->get_post("OrdenesPrevS");
+		$this->PreventasS_model->actualizarOrdenPrevS($OrdenEdit);
+		print_r($OrdenEdit);
+	}
+
 
 }
 ?>

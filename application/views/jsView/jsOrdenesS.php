@@ -1,6 +1,17 @@
 <script>
 $(document).ready( function () {
-
+	$("#txtBuscar").on("keyup",function () {
+		var t = $("#tblOrdenesS").DataTable();
+		t.search(this.value).draw();
+	});
+	$("#txtBuscar1").on("keyup",function () {
+		var t = $("#tblNuevaOrdenS").DataTable();
+		t.search(this.value).draw();
+	});
+	$("#txtBuscar2").on("keyup",function () {
+		var t = $("#tblDetOrS").DataTable();
+		t.search(this.value).draw();
+	});
 
 	$("#tblOrdenesS,#tblDetOrS").DataTable({
 		responsive:true,

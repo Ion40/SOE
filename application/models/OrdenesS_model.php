@@ -82,6 +82,7 @@ class OrdenesS_model extends CI_Model
 	public function getOrdenesS()
 	{
 		$this->db->where("Usuario",$this->session->userdata("id"));
+		$this->db->where("Preventa",0);
 		$query = $this->db->get("view_ordenes_S_creadas");
 		if ($query->num_rows()>0)
 		{
@@ -94,6 +95,7 @@ class OrdenesS_model extends CI_Model
 	{
 		$this->db->where("Usuario",$this->session->userdata("id"));
 		$this->db->where("FechaEntrega",$fecha);
+		$this->db->where("Preventa",0);
 		$query = $this->db->get("view_detalle_ordenS");
 		if ($query->num_rows()>0) {
 			return $query->result_array();

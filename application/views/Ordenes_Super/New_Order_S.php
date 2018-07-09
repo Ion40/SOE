@@ -35,7 +35,7 @@
 					<i class="material-icons iconSearch">search</i>
 				</div>
 				<div class="input-field col s12 m6 l4">
-					<input id="BuscarNewOrdenes" type="text" placeholder="Buscar">
+					<input id="txtBuscar1" type="text" placeholder="Buscar">
 					<label for="search"></label>
 				</div>
 			</div>
