@@ -519,6 +519,4 @@ function remcli (cliente,ruta,fecha) {
 	var ruta1 = loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 	this.location.href = ruta1+"../remisionOrdenPreSCliente/"+cliente+"/"+ruta+"/"+fecha;
 }
-
-
 </script>

@@ -235,7 +235,37 @@
                             </li>
                             ';
                             break;
-						case  7 && 8:
+
+						case  7:
+							echo '
+                            <li>
+                                <a href="Inicio">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="Clientes">Clientes</a>
+                            </li>
+                            <li>
+                            	<a href="PreventasS">Preventas</a>
+                            </li>
+                            <li>
+                                 <a href="Inventario">Inventario</a>
+                            </li>
+                            <li>
+                                    <a href="javascript:void(0)" class="contraseña">Cambiar Contraseña</a>
+                                </li>
+                            <li class="right" style="margin-right:20px;">
+                            <a href="'.base_url("index.php/Salir").'"> <i class="material-icons">power_settings_new</i></a>
+                            </li>
+                            <li class="right">
+                                '.$this->session->userdata("UserN").'
+                            </li>
+                            <li class="right" style="margin-right:10px;">
+                                <i class="material-icons">account_circle</i>  
+                            </li>
+                            ';
+							break;
+
+						case  8:
 							echo '
                             <li>
                                 <a href="Inicio">Inicio</a>
