@@ -139,3 +139,19 @@ $route["ElimUnoPrevS/(:any)"]  = "PreventasS_controller/eliminarUnoPrevS/$1";
 $route["ActualizarOrdenPrevS"]  = "PreventasS_controller/actualizarOrdenPrevS";
 $route["remisionOrdenPreSCliente/(:any)/(:any)/(:any)"] = "PreventasS_controller/remisionOrdenPrevScliente/$1/$2/$3";
 $route["remisionOrdenPrevSRutas/(:any)/(:any)"] = "PreventasS_controller/remisionOrdenPrevSRutas/$1/$2";
+
+/***************************************************************************************************/
+$route["ConsolidadoS"] = "ConsolidadoS_controller";
+$route["NuevoConsolidadoS"] = "ConsolidadoS_controller/NuevoConsolidadoS";
+$route["NewConsolidadoOrderS/(:any)"] = "ConsolidadoS_controller/nuevoConsolidadoOrderS/$1";
+$route["GuardarConsOS"] = "ConsolidadoS_controller/guardarConsolidadoOS";
+$route["repetidosS/(:any)/(:any)/(:any)"] = "ConsolidadoS_controller/buscarRepetidos/$1/$2/$3";
+
+$route["NewConsolidadoOrderPrevS/(:any)/(:any)"] = "ConsolidadoS_controller/nuevoConsolidadoPS/$1/$2";
+$route["GuardarConsPS"] = "ConsolidadoS_controller/guardarConsolidadoPS";
+
+$route["NewConsolidadoUnif/(:any)"] = "ConsolidadoS_controller/nuevoConsolidadoUnif/$1";
+$route["GuardarConsolidadosS"] = "ConsolidadoS_controller/guardarConsolidadoS";
+$route["InfoConsolidadoS/(:any)"] = "ConsolidadoS_controller/detallesConsolidadoS/$1";
+$route["DetalleConsolidadoS/(:any)/(:any)/(:any)"] = "ConsolidadoS_controller/DetallesConsS/$1/$2/$3";
+$route["EliminarConsolS/(:any)/(:any)/(:any)"] = "ConsolidadoS_controller/EliminarCons/$1/$2/$3";

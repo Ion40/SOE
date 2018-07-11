@@ -280,6 +280,9 @@
                             	<a href="PreventasS">Preventas</a>
                             </li>
                             <li>
+                                 <a href="ConsolidadoS">Consolidado</a>
+                            </li>
+                            <li>
                                  <a href="Inventario">Inventario</a>
                             </li>
                             <li>

@@ -359,13 +359,15 @@ class Consolidado_model extends CI_Model
 				"Valor" => $temp,
 				"Concepto" => "Consecutivo",
 				"Tipo" => $tipo,
-				"FechaEntrega" => $fecha
+				"FechaEntrega" => $fecha,
+				"Usuario" => $this->session->userdata("id")
 			);
 			$this->db->insert("consec_consolidado",$data);
 		}
 	}
 
 	public function ultimoConsecConsol($fecha,$tipo){
+		$this->db->where("Usuario",$this->session->userdata('id'));
 		$consecutivo = $this->db->get_where("consec_consolidado",
 			array(
 				"Tipo" => $tipo,

@@ -499,7 +499,8 @@ function verificarO(posicion,cod) {
 	}
 }
 
-function checkAllO(){
+function checkAllO()
+{
 	var linea = 0;
 	var disponible = 0;
 	if ($("#checkAllO").is(":checked",true)) {
