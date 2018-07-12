@@ -155,3 +155,5 @@ $route["GuardarConsolidadosS"] = "ConsolidadoS_controller/guardarConsolidadoS";
 $route["InfoConsolidadoS/(:any)"] = "ConsolidadoS_controller/detallesConsolidadoS/$1";
 $route["DetalleConsolidadoS/(:any)/(:any)/(:any)"] = "ConsolidadoS_controller/DetallesConsS/$1/$2/$3";
 $route["EliminarConsolS/(:any)/(:any)/(:any)"] = "ConsolidadoS_controller/EliminarCons/$1/$2/$3";
+$route["RemisionConsS/(:any)/(:any)/(:any)"] = "ConsolidadoS_controller/RemisionS/$1/$2/$3";
+

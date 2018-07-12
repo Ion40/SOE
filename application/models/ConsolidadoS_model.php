@@ -27,7 +27,7 @@ class ConsolidadoS_model extends CI_Model
 		$i = 0;
 		$json = array();
 		$this->db->where("Usuario",$this->session->userdata("id"));
-		$query = $this->db->query("CALL ConsolidadoOrdenS('".$fecha."')");
+		$query = $this->db->query("CALL ConsolidadoOrdenS('".$fecha."',".$this->session->userdata("id").")");
 		foreach ($query->result_array() as $key ) {
 			$id_row = "chkos" . $key["Codigo"];
 			$id_lbl = "lblos" . $key["Codigo"];
@@ -93,12 +93,15 @@ class ConsolidadoS_model extends CI_Model
 		}
 	}
 
-	public function ultimoConsecConsol($fecha,$tipo){
+	public function ultimoConsecConsol($fecha,$tipo, $usuario){
 		$this->db->where("Usuario",$this->session->userdata('id'));
+		$this->db->order_by("Valor","desc");
+		$this->db->limit(1);
 		$consecutivo = $this->db->get_where("consec_consolidado",
 			array(
 				"Tipo" => $tipo,
-				"FechaEntrega" => $fecha
+				"FechaEntrega" => $fecha,
+				"Usuario" => $usuario
 			));
 		if ($consecutivo->num_rows()>0) {
 			return $consecutivo->result_array();
@@ -218,7 +221,7 @@ class ConsolidadoS_model extends CI_Model
 	public function nuevoConsolidadoUnif($fecha){
 		$i = 0;
 		$json = array();
-		$query = $this->db->query("CALL ConsolidadoS('".$fecha."')");
+		$query = $this->db->query("CALL ConsolidadoS('".$fecha."',".$this->session->userdata("id").")");
 		foreach ($query->result_array() as $key ) {
 			$id_row = "chk" . $key["Codigo"];
 			$id_lbl = "lbl" . $key["Codigo"];
@@ -311,7 +314,7 @@ class ConsolidadoS_model extends CI_Model
 	}
 
 	public function remisionConsolidadoS($fechaEntrega, $tipo, $usuario){
-		$query = $this->db->get_where("consolidado_s",array("FechaEntrega" => $fechaEntrega, "Tipo" => $tipo, "Usuario" => $usuario));
+		$query = $this->db->get_where("Consolidado_s",array("FechaEntrega" => $fechaEntrega, "Tipo" => $tipo, "Usuario" => $usuario));
 		if ($query->num_rows()>0) {
 			return $query->result_array();
 		}
@@ -361,5 +364,6 @@ class ConsolidadoS_model extends CI_Model
 			$this->db->delete("consolidado_s");
 		}
 	}
+
 
 }

@@ -27,134 +27,145 @@ setlocale(LC_ALL,'Spanish_Nicaragua');
 			<div class="row">
 				<div class="col s12 m12 l12">
 					<ul class="tabs">
-						<li class="tab col s4 m4 l4"><a class="active" href="#Orders">Ordenes</a></li>
-						<li class="tab col s4 m4 l4"><a  href="#PrevOrders">Preventas</a></li>
-						<li class="tab col s4 m4 l4"><a href="#General">Unificado</a></li>
+						<?php
+							if($this->session->userdata("RolUser") == 8)
+							{
+								echo '<li class="tab col s4 m4 l4"><a class="active" href="#Orders">Ordenes</a></li>
+									  <li class="tab col s4 m4 l4"><a  href="#PrevOrders">Preventas</a></li>
+									  <li class="tab col s4 m4 l4"><a href="#General">Unificado</a></li>
+									  ';
+							}else{
+								echo '<li class="tab col s4 m4 l4 disabled"><a href="#Orders">Ordenes</a></li>
+									  <li class="tab col s4 m4 l4"><a class="active" href="#PrevOrders">Preventas</a></li>
+									  <li class="tab col s4 m4 l4 disabled"><a href="#General">Unificado</a></li>
+									  ';
+							}
+						?>
 					</ul>
 				</div>
 				<div id="Orders" class="col s12">
-					<br><br>
-					<div class="row">
-						<div class="row">
-							<div class="col s4 m4 l4">
-								<label for="">Selecciona una fecha</label>
-								<select name="DateChooseOrderS" id="DateChooseOrderS" class="browser-default chosen-select">
-									<option  disabled selected></option>
-									<?php
-									if (!$fechas) {
-									} else {
-										foreach ($fechas as $key) {
-											echo "
-											<option value='".$key["FechaEntrega"]."'>".$key["FechaEntrega"]."</option>
-                       	  				";
-										}
-									}
-
-									?>
-								</select>
-							</div>
-							<div class="col s6 m6 l6 right">
-								<a href="#" id="btnConsOrderS" class=" btn btn-block btn-blue waves-effect waves-light hoverable right">
-									Procesar
-								</a>
-							</div>
-						</div>
-						<div class="col s12 m12 l12">
-							<div class="">
-								<div class="">
-									<div class="div-cont">
-										<table id="tblNewConsOrderS" class="table striped">
-											<thead>
-											<tr class="tblcabecera">
-												<th>Codigo</th>
-												<th style="width: 200px;">Descripcion</th>
-												<th>GRM</th>
-												<th>Saldo</th>
-												<th>Saldo Restante</th>
-												<th>Unidades <br> Pedidas</th>
-												<th>LBS</th>
-												<th>Estado</th>
-												<th>FechaEntrega</th>
-												<th class="center tooltipped" data-tooltip="Aplicar todos" data-position="right">
-													<p>
-														<label>
-															<input onclick="checkAllOS()" type="checkbox" class="filled-in" id="checkAllOS" />
-															<span></span>
-														</label>
-													</p>
-												</th>
-											</tr>
-											</thead>
-											<tbody>
-											</tbody>
-										</table>
+								<br><br>
+								<div class="row">
+									<div class="row">
+										<div class="col s4 m4 l4">
+											<label for="">Selecciona una fecha</label>
+											<select name="DateChooseOrderS" id="DateChooseOrderS" class="browser-default chosen-select">
+												<option  disabled selected></option>
+												<?php
+												if (!$fechas) {
+												} else {
+													foreach ($fechas as $key) {
+														echo "
+														<option value='".$key["FechaEntrega"]."'>".$key["FechaEntrega"]."</option>
+													";
+													}
+												}
+			
+												?>
+											</select>
+										</div>
+										<div class="col s6 m6 l6 right">
+											<a href="#" id="btnConsOrderS" class=" btn btn-block btn-blue waves-effect waves-light hoverable right">
+												Procesar
+											</a>
+										</div>
+									</div>
+									<div class="col s12 m12 l12">
+										<div class="">
+											<div class="">
+												<div class="div-cont">
+													<table id="tblNewConsOrderS" class="table striped">
+														<thead>
+														<tr class="tblcabecera">
+															<th>Codigo</th>
+															<th style="width: 200px;">Descripcion</th>
+															<th>GRM</th>
+															<th>Saldo</th>
+															<th>Saldo Restante</th>
+															<th>Unidades <br> Pedidas</th>
+															<th>LBS</th>
+															<th>Estado</th>
+															<th>FechaEntrega</th>
+															<th class="center tooltipped" data-tooltip="Aplicar todos" data-position="right">
+																<p>
+																	<label>
+																		<input onclick="checkAllOS()" type="checkbox" class="filled-in" id="checkAllOS" />
+																		<span></span>
+																	</label>
+																</p>
+															</th>
+														</tr>
+														</thead>
+														<tbody>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
 				<div id="PrevOrders" class="col s12">
-					<br><br>
-					<div class="row">
-						<div class="row">
-							<div class="col s4 m4 l4">
-								<input type="hidden" id="userid" value="<?php echo $this->session->userdata("id")?>">
-								<label for="">Selecciona una fecha</label>
-								<select name="datechoose" id="datechoose" class="browser-default chosen-select">
-									<option  disabled selected></option>
-									<?php
-									if (!$fechas) {
-									} else {
-										foreach ($fechas as $key) {
-											echo "
-											<option value='".$key["FechaEntrega"]."'>".$key["FechaEntrega"]."</option>
-                       	  				";
-										}
-									}
-
-									?>
-								</select>
-							</div>
-							<div class="col s6 m6 l6 right">
-								<a href="#" id="btnConsPrevS" class=" btn btn-block btn-blue waves-effect waves-light hoverable right">Procesar</a>
-							</div>
-						</div>
-						<div class="col s12 m12 l12">
-							<div class="">
-								<div class="">
-									<div class="div-cont">
-										<table id="tblConsPreventa" class="table striped">
-											<thead>
-											<tr class="tblcabecera">
-												<th>Codigo</th>
-												<th style="width: 200px;">Descripcion</th>
-												<th>GRM</th>
-												<th>Saldo</th>
-												<th>Saldo Restante</th>
-												<th>Unidades <br> Pedidas</th>
-												<th>LBS</th>
-												<th>Estado</th>
-												<th>FechaEntrega</th>
-												<th class="center tooltipped" data-tooltip="Aplicar todos" data-position="right">
-													<p>
-														<label>
-															<input onclick="checkAllP()" type="checkbox" class="filled-in" id="checkAllP" />
-															<span></span>
-														</label>
-													</p>
-												</th>
-											</tr>
-											</thead>
-											<tbody>
-											</tbody>
-										</table>
+								<br><br>
+								<div class="row">
+									<div class="row">
+										<div class="col s4 m4 l4">
+											<input type="hidden" id="userid" value="<?php echo $this->session->userdata("id")?>">
+											<label for="">Selecciona una fecha</label>
+											<select name="datechoose" id="datechoose" class="browser-default chosen-select">
+												<option  disabled selected></option>
+												<?php
+												if (!$fechas) {
+												} else {
+													foreach ($fechas as $key) {
+														echo "
+														<option value='".$key["FechaEntrega"]."'>".$key["FechaEntrega"]."</option>
+													";
+													}
+												}
+			
+												?>
+											</select>
+										</div>
+										<div class="col s6 m6 l6 right">
+											<a href="#" id="btnConsPrevS" class=" btn btn-block btn-blue waves-effect waves-light hoverable right">Procesar</a>
+										</div>
+									</div>
+									<div class="col s12 m12 l12">
+										<div class="">
+											<div class="">
+												<div class="div-cont">
+													<table id="tblConsPreventa" class="table striped">
+														<thead>
+														<tr class="tblcabecera">
+															<th>Codigo</th>
+															<th style="width: 200px;">Descripcion</th>
+															<th>GRM</th>
+															<th>Saldo</th>
+															<th>Saldo Restante</th>
+															<th>Unidades <br> Pedidas</th>
+															<th>LBS</th>
+															<th>Estado</th>
+															<th>FechaEntrega</th>
+															<th class="center tooltipped" data-tooltip="Aplicar todos" data-position="right">
+																<p>
+																	<label>
+																		<input onclick="checkAllP()" type="checkbox" class="filled-in" id="checkAllP" />
+																		<span></span>
+																	</label>
+																</p>
+															</th>
+														</tr>
+														</thead>
+														<tbody>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-				</div>
 				<div id="General" class="col s12">
 					<!-- Consolidado General -->
 					<br><br>

@@ -1,5 +1,53 @@
 <script>
+$(document).ready(function () {
+	$("#BuscarConsolidadoS").on("keyup", function () {
+		var t = $("#tblConsolidado").DataTable();
+		t.search(this.value).draw();
+	});
 
+	$("#txtBuscarConsDet").on("keyup", function () {
+		var t = $("#tblDetCons").DataTable();
+		t.search(this.value).draw();
+	});
+
+	$("#tblConsolidado,#tblDetCons").DataTable({
+		responsive:true,
+		"autoWidth":false,
+		"info": true,
+		"sort":true,
+		"destroy": false,
+		/* "dom": 'T<"clear">lfrtip',
+         "tableTools": {
+             "sSwfPath": "<php// echo base_url(); ?>assets/data/swf/copy_csv_xls_pdf.swf",
+         },*/
+		"pagingType": "full_numbers",
+		"lengthMenu": [
+			[5,10,50,100, -1],
+			[5,10,50,100, "Todo"]
+		],
+		"order": [
+			[0, "asc"]
+		],
+		"language": {
+			"info": "Registro _START_ a _END_ de _TOTAL_ entradas",
+			"infoEmpty": "Registro 0 a 0 de 0 entradas",
+			"zeroRecords": "No se encontro coincidencia",
+			"infoFiltered": "(filtrado de _MAX_ registros en total)",
+			"emptyTable": "NO HAY DATOS DISPONIBLES",
+			"lengthMenu": '_MENU_ ',
+			"search": '<i class=" material-icons">search</i>',
+			"loadingRecords": " <div class='progress'>"+
+			"<div class='indeterminate'></div>"+
+			"</div>",
+			"paginate": {
+				"first": "Primera",
+				"last": "Última ",
+				"next": "Siguiente",
+				"previous": "Anterior"
+			}
+		}
+	});
+});
 	$("#DateChooseOrderS").change(function(){
 		$("#checkAllOS").prop("checked",false);
 		$("#tblNewConsOrderS").DataTable({
@@ -622,7 +670,7 @@
 							"<td class='center'><a class='btn-floating blue dropdown-trigger' data-target='dropdown"+item["Tipo"]+"' href='javascript:void(0)'><i class='material-icons'>menu</i></a></td>"+
 							'<ul id="dropdown'+item["Tipo"]+'" class="dropdown-content">'+
 							'<li id=""><a  href="DetalleConsolidadoS/'+item["FechaEntrega"]+"/"+item["Tipo"]+"/"+item["Usuario"]+'">Detalles</a></li>'+
-							'<li><a target="_blank" href="RemisionCons/'+item["FechaEntrega"]+"/"+item["Tipo"]+'">Remision</a></li>'+
+							'<li><a target="_blank" href="RemisionConsS/'+item["FechaEntrega"]+"/"+item["Tipo"]+"/"+item["Usuario"]+'">Remision</a></li>'+
 							'<li class="divider" tabindex="-1"></li>'+
 							'<li><a onclick="EliminarConsS('+"'"+item["FechaEntrega"]+"'"+","+"'"+item["Tipo"]+"'"+","+"'"+item["Usuario"]+"'"+')" id="'+item["FechaEntrega"]+'" href="javascript:void(0)">Eliminar</a></li>'+
 							'</ul>'+

@@ -40,6 +40,12 @@ class ConsolidadoS_controller extends CI_Controller
 		$this->load->view("jsView/jsConsolidadoS");
 	}
 
+	public function RemisionS($fecha,$tipo, $usuario){
+		$data["remision"] = $this->ConsolidadoS_model->remisionConsolidadoS($fecha,$tipo, $usuario);
+		$data["cons"] = $this->ConsolidadoS_model->ultimoConsecConsol($fecha,$tipo, $usuario);
+		$this->load->view('ConsolidadoS/Remision_consolidadoS',$data);
+	}
+
      public function nuevoConsolidadoOrderS ($fecha)
 	 {
 	 	$this->ConsolidadoS_model->nuevoConsolidadoOrderS($fecha);

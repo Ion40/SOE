@@ -22,7 +22,7 @@ setlocale(LC_ALL,'Spanish_Nicaragua');
 					<i class="material-icons iconSearch">search</i>
 				</div>
 				<div class="input-field col s12 m6 l4">
-					<input id="BuscarConsolidado" type="text" placeholder="Buscar">
+					<input id="BuscarConsolidadoS" type="text" placeholder="Buscar">
 					<label for="search"></label>
 				</div>
 			</div>
