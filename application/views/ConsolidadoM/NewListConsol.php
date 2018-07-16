@@ -49,11 +49,10 @@
                                         <th class="center">8</th>
                                         <th class="center">9</th>
                                         <th class="center">10</th>
-                                        <th class="center">TOTAL</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php 
+                                    <?php
                                         if (!$inv) {
                                         } else {
                                             foreach ($inv as $key) {
@@ -62,17 +61,16 @@
                                                         <td>".$key["Codigo"]."</td>
                                                         <td>".$key["Descripcion"]."</td>
                                                         <td>".number_format($key["GRM"],0)."</td>
-                                                        <td><input class='txt' type='text' name='Camp1' id='Camp1_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp2' id='Camp2_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp3' id='Camp3_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp4' id='Camp4_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp5' id='Camp5_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp6' id='Camp6_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp7' id='Camp7_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp8' id='Camp8_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp9' id='Camp9_".$key["Codigo"]."'></td>
-                                                        <td><input class='txt' type='text' name='Camp0' id='Camp0_".$key["Codigo"]."'></td>
-                                                        <td><span id='total".$key["Codigo"]."'></span></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp1' id='Camp1_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp2' id='Camp2_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp3' id='Camp3_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp4' id='Camp4_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp5' id='Camp5_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp6' id='Camp6_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp7' id='Camp7_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp8' id='Camp8_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp9' id='Camp9_".$key["Codigo"]."'></td>
+                                                        <td><input value='0' class='txt".$key["Codigo"]."' type='text' name='Camp0' id='Camp0_".$key["Codigo"]."'></td>
                                                     </tr>
                                                 ";
                                             }
@@ -93,7 +91,6 @@
                                         <th class="green white-text center">8</th>
                                         <th class="green white-text center">9</th>
                                         <th class="green white-text center">10</th>
-                                        <th class="center"></th>
                                 </tfoot>
                             </table>
                         </div>

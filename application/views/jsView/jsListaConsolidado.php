@@ -56,11 +56,18 @@ function saveConsolidadoM() {
 		var table = $("#tblNewConsol").DataTable({"paging": false,"destroy": true});
 		var i = 0;
 		var arr = new Array();
+		var arr1 = new Array();
 		table.rows().eq(0).each( function (index) {
 			var row = table.row(index);
 			var data = row.data();
-				arr[i] = data[0]+","+data[1]+","+data[2]+","+$("#date").val()+","+$("#Camp1_"+data[0]+"").val()+","+$("#Camp2_"+data[0]+"").val()+","+$("#Camp3_"+data[0]+"").val()+","+$("#Camp4_"+data[0]+"").val()+","+$("#Camp5_"+data[0]+"").val()+","+$("#Camp6_"+data[0]+"").val()+","+$("#Camp7_"+data[0]+"").val()+","+$("#Camp8_"+data[0]+"").val()+","+$("#Camp9_"+data[0]+"").val()+","+$("#Camp0_"+data[0]+"").val();
-				i++;
+				if ($("#Camp1_"+data[0]).val() != 0 || $("#Camp2_"+data[0]).val() != 0 || $("#Camp3_"+data[0]).val() != 0
+				   || $("#Camp4_"+data[0]).val() != 0 || $("#Camp5_"+data[0]).val() != 0 || $("#Camp6_"+data[0]).val() != 0
+				   || $("#Camp7_"+data[0]).val() != 0 || $("#Camp8_"+data[0]).val() != 0 || $("#Camp9_"+data[0]).val() != 0
+				   || $("#Camp0_"+data[0]).val() != 0)
+				{
+					arr[i] = data[0]+","+data[1]+","+data[2]+","+$("#date").val()+","+$("#Camp1_"+data[0]).val()+","+$("#Camp2_"+data[0]).val()+","+$("#Camp3_"+data[0]).val()+","+$("#Camp4_"+data[0]).val()+","+$("#Camp5_"+data[0]).val()+","+$("#Camp6_"+data[0]).val()+","+$("#Camp7_"+data[0]).val()+","+$("#Camp8_"+data[0]).val()+","+$("#Camp9_"+data[0]).val()+","+$("#Camp0_"+data[0]).val();
+					i++;
+				}
 		});
 
 		var form_data = {
