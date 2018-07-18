@@ -1,6 +1,9 @@
 <script type="text/javascript">
 $(document).ready(function(){
-
+$("#BuscarConsolidadosM").on("keyup", function () {
+	var table = $("#TblConsolidadoM").DataTable();
+	table.search(this.value).draw();
+});
 
   $("#tblNewConsol").DataTable({
         responsive:true,

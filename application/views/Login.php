@@ -19,7 +19,7 @@
 										<div class="card-inner">
 											<center>
 												<h5 class="card-heading">PLATAFORMA SOE</h5>
-			    								<p style="margin-bottom:0px !important;">Sistema de Orden de entregas</p>			  
+			    								<p style="margin-bottom:0px !important;">Sistema de Orden de Entregas</p>
 			    							</center>
 										</div>
 									</div>

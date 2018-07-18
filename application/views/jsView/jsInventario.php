@@ -1,13 +1,18 @@
 <script>
 $(document).ready(function(){
 
-$("#BuscarInventario").on("keyup",function(){
-  var table = $("#TblProducos").DataTable();
-  table.search(this.value).draw();    
-});
+	$("#BuscarInventario").on("keyup",function(){
+	  var table = $("#TblProducos").DataTable();
+	  table.search(this.value).draw();
+	});
+
+	$("#BuscarDevoluciones").on("keyup", function () {
+		var table = $("#TblDevoluciones").DataTable();
+		table.search(this.value).draw();
+	});
 });
 
-$("#TblProducos").DataTable({
+$("#TblProducos,#TblDevoluciones").DataTable({
         responsive:true,
         "autoWidth":false,
         "info": true,

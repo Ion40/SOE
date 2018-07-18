@@ -188,6 +188,5 @@ class Inventario_model extends CI_Model
 			$this->db->delete("devoluciones");
 		}
 	}
-
 }
 ?>

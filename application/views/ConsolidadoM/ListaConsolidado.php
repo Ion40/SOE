@@ -10,7 +10,7 @@
                     <i class="material-icons iconSearch">search</i>
                 </div>
                 <div class="input-field col s12 m6 l4">
-                    <input id="BuscarUsuarios" type="text" placeholder="Buscar">
+                    <input id="BuscarConsolidadosM" type="text" placeholder="Buscar">
                     <label for="search"></label>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                     <div class="card-content">
                      
                         <div class="div-cont">
-                            <table id="TblUsuarios" class="table striped">
+                            <table id="TblConsolidadoM" class="table striped">
                                 <thead>
                                     <tr class="tblcabecera">
                                         <th>FECHA</th>

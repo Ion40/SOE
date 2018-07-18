@@ -51,7 +51,7 @@
 			<br>
 			<br>
 
-			<h4 class="center" style="color:black;">Inventario físico de productos terminados</h4>
+			<h4 class="center" style="color:black;">Lista Devoluciones</h4>
 			<div class="Buscar row column noMargen">
 				<div class="col s1 m1 l1 offset-l3 offset-m2">
 					<i class="material-icons iconSearch">search</i>
