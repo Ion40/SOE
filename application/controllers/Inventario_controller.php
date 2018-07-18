@@ -25,6 +25,17 @@ class Inventario_controller extends CI_Controller
         $this->load->view("jsView/jsInventario");
     }
 
+	public function Devoluciones()
+	{
+		$data["prod"] = $this->Inventario_model->getDevoluciones();
+		$data["fechas"] = $this->Inventario_model->mostrarFechas();
+		$this->load->view("header/header");
+		$this->load->view('Inventario/Devoluciones',$data);
+		$this->load->view("footer/footer");
+		$this->load->view("jsView/jsInventario");
+	}
+
+
     public function cargarInventario(){
         $objReader = PHPExcel_IOFactory::createReader("Excel2007");
         $fecha = $this->input->get_post("fecha");
@@ -33,6 +44,16 @@ class Inventario_controller extends CI_Controller
          $this->Usuarios_model->InsertLog($this->session->userdata("id"), $this->session->userdata("NameU"),
         "".$this->session->userdata("NameU")." actualizo el inventario de productos");
     }
+
+	public function guardaDataDevoluciones(){
+		$objReader = PHPExcel_IOFactory::createReader("Excel2007");
+		$fecha = $this->input->get_post("fechaDev");
+		$this->Inventario_model->guardaDataDevoluciones($objReader->load($_FILES["dataProductoDev"]["tmp_name"]), $fecha);
+		echo $fecha;
+		/*$this->Usuarios_model->InsertLog($this->session->userdata("id"), $this->session->userdata("NameU"),
+			"".$this->session->userdata("NameU")." actualizo el inventario de productos");*/
+	}
+
 
     public function actualizarProd()
     {
@@ -45,5 +66,24 @@ class Inventario_controller extends CI_Controller
         "".$this->session->userdata("NameU")." actualizo el saldo del producto ".$codigoedit." ");
     }
 
+	public function evitarDuplicados($fecha)
+	{
+		$this->Inventario_model->evitarDuplicados($fecha);
+	}
+
+    public function getDevolucionesDetalles($fecha)
+	{
+		$this->Inventario_model->getDevolucionesDetalles($fecha);
+	}
+
+	public function algoritmo($fecha)
+	{
+		$this->Inventario_model->algoritmo($fecha);
+	}
+
+	public function EliminarDev($fecha)
+	{
+		$this->Inventario_model->eliminarDev($fecha);
+	}
 }
 ?>

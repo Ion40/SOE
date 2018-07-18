@@ -219,6 +219,9 @@
                                     <a href="Inventario">Inventario</a>
                                 </li>
                                 <li>
+                                    <a href="Devoluciones">Devoluciones</a>
+                                </li>
+                                <li>
                                     <a href="ListConsolidado">Consolidado</a>
                                 </li>
                                 <li>

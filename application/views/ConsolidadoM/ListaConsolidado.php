@@ -57,7 +57,7 @@
                                                     <td class='center'>
                                                     <a onclick='detalles(".'"'.$key["Fecha"].'"'.")' class='modal-trigger tooltipped' data-tooltip='ver detalles' data-position='left' href='#modalDet'><i class='material-icons'>remove_red_eye</i></a>
 
-                                                    <a class='tooltipped' data-tooltip='Remisión' href='javascript:void(0)'><i class='material-icons'>assignment_turned_in</i></a>
+                                                    <a target='_blank' class='tooltipped' data-tooltip='Remisión' href='RemisionListaCons/".$key["Fecha"]."'><i class='material-icons'>assignment_turned_in</i></a>
 
                                                     <a onclick='Eliminar(".'"'.$key["Fecha"].'"'.")' href='javascript:void(0)' class='tooltipped' data-tooltip='Eliminar' data-position='right'><i class='material-icons'>delete</i></a>
                                                     </td>

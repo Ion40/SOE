@@ -25,6 +25,12 @@ class ListaConsolidado_controller extends CI_Controller
         $this->load->view("jsView/jsListaConsolidado");
 	}
 
+	public function RemisionListaConsolidado ($fecha) {
+		$data["cons"] = $this->ListaConsolidado_model->RemisionListaConsol($fecha);
+		$this->load->view('ConsolidadoM/Remision_ListaConsolidado',$data);
+	}
+
+
 	public function guardarConsolidadoM() {
 		$datos = $this->input->get_post("datos");
 		$this->ListaConsolidado_model->guardarConsolidadoM($datos);

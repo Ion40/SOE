@@ -80,6 +80,17 @@ class ListaConsolidado_model extends CI_Model
 		$this->db->where("Fecha",$fecha);
 		$this->db->delete("consolidadoM");
 	}
+
+	public function RemisionListaConsol($fecha)
+	{
+		$this->db->where("Fecha",$fecha);
+		$query = $this->db->get("view_remision_Listaconsol");
+		if ($query->num_rows() > 0)
+		{
+			return $query->result_array();
+		}
+		return 0;
+	}
 }
 
  ?>

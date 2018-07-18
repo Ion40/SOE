@@ -23,7 +23,15 @@ $route["UpdatePassword"] = "Usuarios_controller/updatePass";
 $route["Inventario"] = "Inventario_controller";
 $route["cargarProd"] = "Inventario_controller/cargarInventario"; 
 $route["ActualizarProd"] = "Inventario_controller/actualizarProd";
-$route["productos"] = "Inventario_controller/listarProductos"; 
+$route["productos"] = "Inventario_controller/listarProductos";
+
+$route["Devoluciones"] = "Inventario_controller/Devoluciones";
+$route["cargarProdDev"] = "Inventario_controller/guardaDataDevoluciones";
+$route["devolucionDuplicados/(:any)"] = "Inventario_controller/evitarDuplicados/$1";
+$route["detalleDevolucion/(:any)"] = "Inventario_controller/getDevolucionesDetalles/$1";
+$route["Depurar/(:any)"] = "Inventario_controller/algoritmo/$1";
+$route["EliminarDevolucion/(:any)"] = "Inventario_controller/EliminarDev/$1";
+
 
 /***************************Rutas Inventario***********************************************/
 
@@ -104,6 +112,7 @@ $route["NewConsolidado"] = "ListaConsolidado_controller/newConsol";
 $route["SaveConsolidado"] = "ListaConsolidado_controller/guardarConsolidadoM";  
 $route["DetConsolidado/(:any)"] = "ListaConsolidado_controller/detalleConsolidado/$1";
 $route["EliminarConsolM/(:any)"] = "ListaConsolidado_controller/Delete/$1";
+$route["RemisionListaCons/(:any)"] = "ListaConsolidado_controller/RemisionListaConsolidado/$1";
 
 /***************************************************************************************************/
 $route["Clientes"] = "Clientes_controller";
