@@ -12,6 +12,10 @@ class Clientes_controller extends CI_Controller
 		parent::__construct();
 		$this->load->library("session");
 		$this->load->model("Clientes_model");
+		if ($this->session->userdata("logged") != 1)
+		{
+			redirect("Login", "refresh");
+		}
 	}
 
 	public function index(){

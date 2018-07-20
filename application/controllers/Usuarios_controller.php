@@ -6,11 +6,10 @@ class Usuarios_controller extends CI_Controller
         parent::__construct();
         $this->load->library("session");
         $this->load->model("Usuarios_model");
-        if($this->session->userdata("logged") == 0)
-        {
-            redirect('Login','refresh');
-            
-        }
+		if ($this->session->userdata("logged") != 1)
+		{
+			redirect("Login", "refresh");
+		}
     }
 
     public function index()

@@ -5,6 +5,10 @@ class Monitoreo_controller extends CI_Controller
 		parent::__construct();
 		$this->load->model("Monitoreo_model");
 		$this->load->library("session");
+		if ($this->session->userdata("logged") != 1)
+		{
+			redirect("Login", "refresh");
+		}
 	}
 
 	public function index(){

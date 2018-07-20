@@ -13,6 +13,10 @@ class PreventasS_controller extends CI_Controller
 		$this->load->library("session");
 		$this->load->model("PreventasS_model");
 		$this->load->model("OrdenesS_model");
+		if ($this->session->userdata("logged") != 1)
+		{
+			redirect("Login", "refresh");
+		}
 	}
 
 	public function index()
