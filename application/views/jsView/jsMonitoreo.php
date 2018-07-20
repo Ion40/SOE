@@ -13,15 +13,15 @@ var table = $("#tblLogs").DataTable({
         "info": true,
         "sort":false,
         "destroy": true,
-        "paging": false,
+        "paging": true,
        /* "dom": 'T<"clear">lfrtip',
         "tableTools": {
             "sSwfPath": "<?php// echo base_url(); ?>assets/data/swf/copy_csv_xls_pdf.swf",
 		},*/
         "pagingType": "full_numbers",
         "lengthMenu": [
-            [5,10,50,100, -1],
-            [5,10,50,100, "Todo"]
+            [20,50,100, -1],
+            [20,50,100, "Todo"]
         ],
         "language": {
             "info": "Registro _START_ a _END_ de _TOTAL_ entradas",
