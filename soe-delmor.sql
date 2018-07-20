@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 100131
 File Encoding         : 65001
 
-Date: 2018-07-18 15:59:27
+Date: 2018-07-20 14:22:34
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -605,44 +605,11 @@ CREATE TABLE `devoluciones` (
   `FechaCreacion` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `Estado` bit(1) DEFAULT NULL,
   PRIMARY KEY (`IdDevolucion`)
-) ENGINE=InnoDB AUTO_INCREMENT=1288 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=1283 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of devoluciones
 -- ----------------------------
-INSERT INTO `devoluciones` VALUES ('1145', '1123', 'MORT-ECONOMICA (125 GR)', '125', '10', '2.7533039647577', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1148', '1131', 'MORT. JAMONADA (150 GR.)', '150', '3', '0.99118942731278', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1152', '1127', 'MORT-POPULAR (½) 227 GRAMOS', '227', '340', '170', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1153', '1119', 'MORT-POPULAR (PAQUETE)', '454', '124', '124', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1155', '1113', 'MORT-CHILTOMA  (225 GR)', '225', '24', '11.894273127753', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1156', '1803', 'MORT. FRANKFURT (125 GR.)', '125', '10', '2.7533039647577', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1158', '1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454', '11.32', '11.32', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1160', '1134', 'MORT-ECONOMICA (225 GR)', '225', '1', '0.49559471365639', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1167', '1135', 'MORT-CON TOCINO (225GR)', '225', '18', '8.920704845815', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1171', '1210', 'HOT DOG (170 GR.)', '170', '37', '13.854625550661', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1172', '1217', 'SALCHI. HOT DOG POPUL. ( 22 UNDS)  (0,409 GR.)', '409', '24', '21.621145374449', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1173', '1218', 'SALCHI. HOT DOG  POPUL. (12 UND)   (260 GR.)', '260', '215', '123.12775330396', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1177', '1811', 'SALCH-  FRANKFURT  (170 GR.)', '170', '30', '11.233480176211', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1181', '1813', 'SALCH JUMBO FRANKFURT GRAN/36 UND.(F.ARTIFICIAL)', '454', '84', '84', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1184', '1970', 'SALCHICHON RES            (200  GR)', '200', '112', '49.339207048458', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1185', '1975', 'SALCHICHON PICANTE    (200  GR)', '200', '96', '42.290748898678', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1198', '1255', 'SALCH- PARRILLERA (360GR)', '360', '25', '19.823788546256', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1210', '1334', 'JAMON POPULAR  (LIBRA.)', '454', '49', '49', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1211', '1335', 'JAMON PIC NIC (125 GR)', '125', '15', '4.1299559471366', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1212', '1336', 'JAMON POPULAR (227 GR)', '227', '109', '54.5', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1213', '1345', 'JAMON PRENSADO (125 GR)', '125', '43', '11.839207048458', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1215', '1620', 'JAMON POLLO    (150 GR.)', '150', '10', '3.3039647577093', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1216', '1373', 'JAMON PRENSADO (LIBRA)', '454', '2', '2', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1217', '1630', 'JAMON PAVO', '454', '9', '9', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1225', '1401', 'CHORIZO CRIOLLO (227 GR)', '227', '222', '111', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1227', '1403', 'CHORIZO CRIOLLO (454 GR)', '454', '1', '1', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1231', '1502', 'CARNE MOLIDA POLLO    (LIBRA)', '454', '195', '195', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1232', '1503', 'CARNE MOLIDA RES         (LIBRA)', '454', '147', '147', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1237', '1622', 'JAMON POLLO  ECONOMAX (150 G)', '150', '20', '6.6079295154185', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1239', '1342', 'JAMON PRENSADO  ECONOMAX  (150 G)', '150', '30', '9.9118942731278', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1243', '1703', 'BACON AHUMADO (200 GR)', '200', '21', '9.2511013215859', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1260', '3430', '***** REC.MORTADELA   ******', '454', '3', '3', '2018-06-30', '2018-07-18 00:00:00', '');
-INSERT INTO `devoluciones` VALUES ('1282', '1795', 'ROAST BEEF LIBRA', '454', '1', '1', '2018-06-30', '2018-07-18 00:00:00', '');
 
 -- ----------------------------
 -- Table structure for logs
@@ -805,6 +772,37 @@ INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas inic
 INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas cerro sesion', '2018-07-18 15:52:09');
 INSERT INTO `logs` VALUES ('4', 'Joel Jiron', 'El usuario Joel Jiron inicio sesion', '2018-07-18 15:52:14');
 INSERT INTO `logs` VALUES ('4', 'Joel Jiron', 'El usuario Joel Jiron cerro sesion', '2018-07-18 15:52:56');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:07');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:18');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:18');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:19');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:19');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:19');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:20');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:20');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:20');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:21');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:21');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:22');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:22');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:22');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:11:39');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi inicio sesion', '2018-07-18 16:11:45');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi cerro sesion', '2018-07-18 16:12:44');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-18 16:13:44');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi inicio sesion', '2018-07-18 16:13:47');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi cerro sesion', '2018-07-18 16:15:10');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi inicio sesion', '2018-07-18 16:17:27');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi cerro sesion', '2018-07-18 16:18:13');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi inicio sesion', '2018-07-18 16:18:17');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi cerro sesion', '2018-07-18 16:19:21');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-20 07:42:57');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-20 07:42:58');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-07-20 07:43:01');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica inicio sesion', '2018-07-20 07:44:21');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica cerro sesion', '2018-07-20 08:27:37');
+INSERT INTO `logs` VALUES ('10', 'Administrador', 'El usuario Administrador inicio sesion', '2018-07-20 08:59:42');
+INSERT INTO `logs` VALUES ('10', 'Administrador', 'El usuario Administrador cerro sesion', '2018-07-20 09:40:45');
 
 -- ----------------------------
 -- Table structure for ordenes
@@ -830,16 +828,16 @@ CREATE TABLE `ordenes` (
 -- ----------------------------
 -- Records of ordenes
 -- ----------------------------
-INSERT INTO `ordenes` VALUES ('3', '1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '72.000', '35.68', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('4', '1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '12.000', '12.00', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('5', '1119', 'MORT-POPULAR (PAQUETE)', '454.000', '275.000', '275.00', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('6', '1123', 'MORT-ECONOMICA (125 GR)', '125.000', '240.000', '66.08', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('7', '1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '288.000', '144.00', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('8', '1131', 'MORT. JAMONADA (150 GR.)', '150.000', '0.000', '0.00', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('9', '1217', 'SALCHI. HOT DOG POPUL. ( 22 UNDS)  (0409 GR.)', '409.000', '144.000', '129.73', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('10', '1650', 'SALCH-  POLLO             (170 GR.)', '170.000', '54.000', '20.22', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('11', '1803', 'MORT. FRANKFURT (125 GR.)', '125.000', '36.000', '9.91', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
-INSERT INTO `ordenes` VALUES ('12', '1811', 'SALCH-  FRANKFURT  (170 GR.)', '170.000', '270.000', '101.10', 'Enrique Cerda', '2018-05-21', '15', '4', '\0', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('3', '1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '72.000', '35.68', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('4', '1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '12.000', '12.00', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('5', '1119', 'MORT-POPULAR (PAQUETE)', '454.000', '275.000', '275.00', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('6', '1123', 'MORT-ECONOMICA (125 GR)', '125.000', '240.000', '66.08', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('7', '1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '288.000', '144.00', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('8', '1131', 'MORT. JAMONADA (150 GR.)', '150.000', '0.000', '0.00', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('9', '1217', 'SALCHI. HOT DOG POPUL. ( 22 UNDS)  (0409 GR.)', '409.000', '144.000', '129.73', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('10', '1650', 'SALCH-  POLLO             (170 GR.)', '170.000', '54.000', '20.22', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('11', '1803', 'MORT. FRANKFURT (125 GR.)', '125.000', '36.000', '9.91', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
+INSERT INTO `ordenes` VALUES ('12', '1811', 'SALCH-  FRANKFURT  (170 GR.)', '170.000', '270.000', '101.10', 'Enrique Cerda', '2018-05-21', '15', '4', '', '2018-06-01 01:44:25', '\0');
 INSERT INTO `ordenes` VALUES ('13', '1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '18.000', '18.00', 'Jairo Silva', '2018-05-21', '25', '8', '\0', '2018-06-01 01:55:13', '\0');
 INSERT INTO `ordenes` VALUES ('14', '1119', 'MORT-POPULAR (PAQUETE)', '454.000', '45.000', '45.00', 'Jairo Silva', '2018-05-21', '25', '8', '\0', '2018-06-01 01:55:13', '\0');
 INSERT INTO `ordenes` VALUES ('15', '1121', 'MORT-ECONOMICA  (GRANEL/PIEZA)', '454.000', '0.000', '0.00', 'Jairo Silva', '2018-05-21', '25', '8', '\0', '2018-06-01 01:55:13', '\0');
@@ -865,21 +863,21 @@ INSERT INTO `ordenes` VALUES ('34', '1130', 'MORT-JAMONADA  (GRANEL/PIEZA)', '45
 INSERT INTO `ordenes` VALUES ('35', '1131', 'MORT. JAMONADA (150 GR.)', '150.000', '43.000', '14.21', 'Pali Zumen', '2018-05-21', '3', '8', '\0', '2018-06-02 09:36:54', '');
 INSERT INTO `ordenes` VALUES ('36', '1132', 'MORT-JAMONADA (225 GR)', '225.000', '343.000', '169.99', 'Pali Zumen', '2018-05-21', '3', '8', '\0', '2018-06-02 09:36:54', '');
 INSERT INTO `ordenes` VALUES ('37', '1134', 'MORT-ECONOMICA (225 GR)', '225.000', '43.000', '21.31', 'Pali Zumen', '2018-05-21', '3', '8', '\0', '2018-06-02 09:36:54', '');
-INSERT INTO `ordenes` VALUES ('38', '1101', 'MORT-BOLOGNA     (GRANEL)', '454.000', '324.000', '324.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('39', '1107', 'MORT-BOLOGNA DELMOR (454 GR)', '454.000', '34.000', '34.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('40', '1109', 'MORT-BOLOGNA (225 GR) (1102)', '225.000', '43.000', '21.31', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('41', '1111', 'MORT-CHILTOMA  (GRANEL / PIEZA)', '454.000', '34.000', '34.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('42', '1112', 'MORT-CHILTOMA  (150 GR)', '150.000', '34.000', '11.23', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('43', '1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '34.000', '16.85', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('44', '1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '5.000', '5.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('45', '1119', 'MORT-POPULAR (PAQUETE)', '454.000', '2.000', '2.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('46', '1121', 'MORT-ECONOMICA  (GRANEL/PIEZA)', '454.000', '3.000', '3.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('47', '1123', 'MORT-ECONOMICA (125 GR)', '125.000', '56.000', '15.42', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('48', '1126', 'MORT-ECONOMICA (454 GR)', '454.000', '56.000', '56.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('49', '1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '343.000', '17.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('50', '1130', 'MORT-JAMONADA  (GRANEL/PIEZA)', '454.000', '4.000', '4.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('51', '1131', 'MORT. JAMONADA (150 GR.)', '150.000', '43.000', '14.21', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
-INSERT INTO `ordenes` VALUES ('52', '1132', 'MORT-JAMONADA (225 GR)', '225.000', '33.000', '16.35', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '\0', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('38', '1101', 'MORT-BOLOGNA     (GRANEL)', '454.000', '324.000', '324.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('39', '1107', 'MORT-BOLOGNA DELMOR (454 GR)', '454.000', '34.000', '34.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('40', '1109', 'MORT-BOLOGNA (225 GR) (1102)', '225.000', '43.000', '21.31', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('41', '1111', 'MORT-CHILTOMA  (GRANEL / PIEZA)', '454.000', '34.000', '34.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('42', '1112', 'MORT-CHILTOMA  (150 GR)', '150.000', '34.000', '11.23', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('43', '1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '34.000', '16.85', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('44', '1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '5.000', '5.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('45', '1119', 'MORT-POPULAR (PAQUETE)', '454.000', '2.000', '2.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('46', '1121', 'MORT-ECONOMICA  (GRANEL/PIEZA)', '454.000', '3.000', '3.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('47', '1123', 'MORT-ECONOMICA (125 GR)', '125.000', '56.000', '15.42', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('48', '1126', 'MORT-ECONOMICA (454 GR)', '454.000', '56.000', '56.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('49', '1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '343.000', '17.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('50', '1130', 'MORT-JAMONADA  (GRANEL/PIEZA)', '454.000', '4.000', '4.00', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('51', '1131', 'MORT. JAMONADA (150 GR.)', '150.000', '43.000', '14.21', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
+INSERT INTO `ordenes` VALUES ('52', '1132', 'MORT-JAMONADA (225 GR)', '225.000', '33.000', '16.35', 'Pali 27 de Mayo', '2018-05-21', '7', '4', '', '2018-06-02 09:36:57', '');
 INSERT INTO `ordenes` VALUES ('53', '1135', 'MORT-CON TOCINO (225GR)', '225.000', '4.000', '1.98', 'Pali 27 de Mayo', '2018-05-21', '7', '12', '\0', '2018-06-02 12:30:32', '\0');
 INSERT INTO `ordenes` VALUES ('56', '1107', 'MORT-BOLOGNA DELMOR (454 GR)', '454.000', '32.000', '32.00', 'Pali Ticuantepe', '2018-05-21', '3', '12', '\0', '2018-06-05 10:42:39', '');
 INSERT INTO `ordenes` VALUES ('57', '1109', 'MORT-BOLOGNA (225 GR) (1102)', '225.000', '34.000', '16.85', 'Pali Ticuantepe', '2018-05-21', '3', '12', '\0', '2018-06-05 10:42:39', '');
@@ -1471,47 +1469,47 @@ CREATE TABLE `productos` (
 -- ----------------------------
 -- Records of productos
 -- ----------------------------
-INSERT INTO `productos` VALUES ('1123', 'MORT-ECONOMICA (125 GR)', '125.000', '7043', '2018-07-11', null);
+INSERT INTO `productos` VALUES ('1123', 'MORT-ECONOMICA (125 GR)', '125.000', '7033', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1640', 'MORT-    POLLO  (150 GR.)', '150.000', '2238', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1137', 'MORT-JAMONADA DELMOR (454 GR)', '454.000', '1015', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1131', 'MORT. JAMONADA (150 GR.)', '150.000', '2400', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1131', 'MORT. JAMONADA (150 GR.)', '150.000', '2397', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1112', 'MORT-CHILTOMA  (150 GR)', '150.000', '1', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1645', 'MORT. DE PAVO', '454.000', '1084', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1109', 'MORT-BOLOGNA (225 GR) (1102)', '225.000', '1305', '2018-07-11', null);
-INSERT INTO `productos` VALUES ('1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '4723', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1119', 'MORT-POPULAR (PAQUETE)', '454.000', '2930', '2018-07-11', null);
+INSERT INTO `productos` VALUES ('1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '4383', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1119', 'MORT-POPULAR (PAQUETE)', '454.000', '2806', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1193', 'MORT- CON TOCINO DELMOR (454 GR)', '454.000', '919', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '1872', '2018-07-11', null);
-INSERT INTO `productos` VALUES ('1803', 'MORT. FRANKFURT (125 GR.)', '125.000', '2442', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '1848', '2018-07-11', null);
+INSERT INTO `productos` VALUES ('1803', 'MORT. FRANKFURT (125 GR.)', '125.000', '2432', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1190', 'MORT-CON TOCINO (150 GR.)', '150.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '1137', '2018-07-11', null);
+INSERT INTO `productos` VALUES ('1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '1126', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1132', 'MORT-JAMONADA (225 GR)', '225.000', '789', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1134', 'MORT-ECONOMICA (225 GR)', '225.000', '1329', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1134', 'MORT-ECONOMICA (225 GR)', '225.000', '1328', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1107', 'MORT-BOLOGNA DELMOR (454 GR)', '454.000', '1433', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1121', 'MORT-ECONOMICA  (GRANEL/PIEZA)', '454.000', '615', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1111', 'MORT-CHILTOMA  (GRANEL / PIEZA)', '454.000', '340', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1101', 'MORT-BOLOGNA     (GRANEL)', '454.000', '1', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1130', 'MORT-JAMONADA  (GRANEL/PIEZA)', '454.000', '303', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1641', 'MORT- POLLO   (GRANEL)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1135', 'MORT-CON TOCINO (225GR)', '225.000', '1270', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1135', 'MORT-CON TOCINO (225GR)', '225.000', '1252', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1126', 'MORT-ECONOMICA (454 GR)', '454.000', '1106', '2018-07-11', null);
 INSERT INTO `productos` VALUES ('1642', 'MORT-DE POLLO DELMOR (454 GR)', '454.000', '1926', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1245', 'SALCHICHA DESAYUNO PSMAT', '1000.000', '47', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1210', 'HOT DOG (170 GR.)', '170.000', '4633', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1217', 'SALCHI. HOT DOG POPUL. ( 22 UNDS)  (0409 GR.)', '409.000', '1786', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1218', 'SALCHI. HOT DOG  POPUL. (12 UND)   (260 GR.)', '260.000', '2994', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1210', 'HOT DOG (170 GR.)', '170.000', '4596', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1217', 'SALCHI. HOT DOG POPUL. ( 22 UNDS)  (0409 GR.)', '409.000', '1762', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1218', 'SALCHI. HOT DOG  POPUL. (12 UND)   (260 GR.)', '260.000', '2779', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1293', 'SALCHICHA ALEMANA KILO', '1000.000', '266', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1221', 'SALAMI         PIEZA        (GRANEL)', '454.000', '398', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1650', 'SALCH-  POLLO             (170 GR.)', '170.000', '2546', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1811', 'SALCH-  FRANKFURT  (170 GR.)', '170.000', '4734', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1811', 'SALCH-  FRANKFURT  (170 GR.)', '170.000', '4704', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1812', 'SALCHICHA-  BOLOGNA       (GRANEL)', '454.000', '613', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1214', 'SALCHICHA - POPULAR        (GRANEL)( 100 UND)', '454.000', '3219', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1819', 'S.JUMBO FRANK (12 UN)  2.5', '1135.000', '121', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1813', 'SALCH JUMBO FRANKFURT GRAN/36 UND.(F.ARTIFICIAL)', '454.000', '1726', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1813', 'SALCH JUMBO FRANKFURT GRAN/36 UND.(F.ARTIFICIAL)', '454.000', '1642', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1223', 'SALAMI PREMIUM 150', '150.000', '-23', '2018-07-11', '2');
 INSERT INTO `productos` VALUES ('1670', 'SALCHICHON POLLO       (200  GR)', '200.000', '700', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1970', 'SALCHICHON RES            (200  GR)', '200.000', '8064', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1975', 'SALCHICHON PICANTE    (200  GR)', '200.000', '9405', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1970', 'SALCHICHON RES            (200  GR)', '200.000', '7952', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1975', 'SALCHICHON PICANTE    (200  GR)', '200.000', '9309', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1980', 'SALCHICHON TUBO PICANTE (MANGUERA GRANEL)', '454.000', '1238', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1971', 'SALCHICHON TUBO RES (MANGUERA GRANEL)', '454.000', '1448', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1655', 'SALCHICHA.  PAVO JUMBO 590', '590.000', '698', '2018-07-11', '0');
@@ -1524,7 +1522,7 @@ INSERT INTO `productos` VALUES ('1232', 'PEPERONI 454 GR', '454.000', '-17', '20
 INSERT INTO `productos` VALUES ('1230', 'PEPERONI GRANEL', '454.000', '977', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1231', 'PEPERONI 1000 (GRANEL)', '454.000', '-23', '2018-07-11', '2');
 INSERT INTO `productos` VALUES ('1243', 'SALCH- DESAYUNO ESPECIAL (GRANEL)', '454.000', '996', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1255', 'SALCH- PARRILLERA (360GR)', '360.000', '1563', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1255', 'SALCH- PARRILLERA (360GR)', '360.000', '1538', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1292', 'SALCH- ALEMANA GRANEL', '454.000', '-23', '2018-07-11', '2');
 INSERT INTO `productos` VALUES ('1257', 'SALCH-PARRILLERA (GRANEL)', '454.000', '353', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1258', 'SALCHICHA PARRILERA 1000 (GRANEL)', '454.000', '-23', '2018-07-11', '2');
@@ -1536,14 +1534,14 @@ INSERT INTO `productos` VALUES ('1233', 'SALAMI PREMIUM 454 GR', '454.000', '141
 INSERT INTO `productos` VALUES ('1234', 'SALAMI PREMIUN 1000 (GRANEL)', '454.000', '-23', '2018-07-11', '2');
 INSERT INTO `productos` VALUES ('1254', 'SALCHICHA PARRILLERA 454 GR', '454.000', '694', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1204', 'SALCHICHA HOT DOG 454GR', '454.000', '590', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1334', 'JAMON POPULAR  (LIBRA.)', '454.000', '2513', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1335', 'JAMON PIC NIC (125 GR)', '125.000', '2493', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1336', 'JAMON POPULAR (227 GR)', '227.000', '2193', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1345', 'JAMON PRENSADO (125 GR)', '125.000', '3235', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1334', 'JAMON POPULAR  (LIBRA.)', '454.000', '2464', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1335', 'JAMON PIC NIC (125 GR)', '125.000', '2478', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1336', 'JAMON POPULAR (227 GR)', '227.000', '2084', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1345', 'JAMON PRENSADO (125 GR)', '125.000', '3192', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1376', 'JAMON PIC-NIC  454', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1620', 'JAMON POLLO    (150 GR.)', '150.000', '1149', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1373', 'JAMON PRENSADO (LIBRA)', '454.000', '1339', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1630', 'JAMON PAVO', '454.000', '262', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1620', 'JAMON POLLO    (150 GR.)', '150.000', '1139', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1373', 'JAMON PRENSADO (LIBRA)', '454.000', '1337', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1630', 'JAMON PAVO', '454.000', '253', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1341', 'JAMON PRENSADO  (PIEZA)', '454.000', '1132', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1621', 'JAMON POLLO           (PIEZA)', '454.000', '199', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1321', 'JAMON PIERNA          (PIEZA)', '454.000', '244', '2018-07-11', '0');
@@ -1551,25 +1549,25 @@ INSERT INTO `productos` VALUES ('1331', 'JAMON PIC NIC --GRANEL CORTADO (PIEZA)'
 INSERT INTO `productos` VALUES ('1325', 'JAMON PIERNA 454', '454.000', '311', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1353', 'JAMON PRENSADO CORTADO Y ARMADO', '454.000', '1669', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1643', 'JAMON DE POLLO DELMOR 454 GR', '454.000', '135', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1401', 'CHORIZO CRIOLLO (227 GR)', '227.000', '18749', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1401', 'CHORIZO CRIOLLO (227 GR)', '227.000', '18527', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1402', 'CHORIZO CRIOLLO (GRANEL)', '454.000', '633', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1403', 'CHORIZO CRIOLLO (454 GR)', '454.000', '996', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1403', 'CHORIZO CRIOLLO (454 GR)', '454.000', '995', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1421', 'CHORIZO ESPAÑOL  (GRANEL)', '454.000', '313', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1473', 'CHORIZO ARGENTINO (GRANEL )', '454.000', '427', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('2993', 'S.VIENA PICANTE', '150.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1502', 'CARNE MOLIDA POLLO    (LIBRA)', '454.000', '3409', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1503', 'CARNE MOLIDA RES         (LIBRA)', '454.000', '3624', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1502', 'CARNE MOLIDA POLLO    (LIBRA)', '454.000', '3214', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1503', 'CARNE MOLIDA RES         (LIBRA)', '454.000', '3477', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1505', 'CARNE MOLIDA RES         GRANEL', '454.000', '-23', '2018-07-11', '2');
 INSERT INTO `productos` VALUES ('1504', 'CARNE MOLIDA CERDO   (LIBRA)', '454.000', '153', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('85120', 'CARNE  BISTEC PIM.LIMON (LIBRA)', '454.000', '-23', '2018-07-11', '2');
 INSERT INTO `productos` VALUES ('1701', 'BACON AHUMADO  ECONOMAX  (200 G)', '200.000', '169', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1622', 'JAMON POLLO  ECONOMAX (150 G)', '150.000', '221', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1622', 'JAMON POLLO  ECONOMAX (150 G)', '150.000', '201', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1333', 'JAMON POPULAR   ECONOMAX  (150 G)', '150.000', '1067', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1342', 'JAMON PRENSADO  ECONOMAX  (150 G)', '150.000', '2692', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1342', 'JAMON PRENSADO  ECONOMAX  (150 G)', '150.000', '2662', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1660', 'SALCH- POLLO   ECONOMAX  (425 G)', '425.000', '107', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1250', 'SALCH-JUMBO ECONOMAX (378 G)', '378.000', '679', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1251', 'SALCH-PARRILLERO ECONOMAX (360 G)', '360.000', '92', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1703', 'BACON AHUMADO (200 GR)', '200.000', '1792', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1703', 'BACON AHUMADO (200 GR)', '200.000', '1771', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1706', 'BACON AHUMADO 1000 GR', '454.000', '267', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1707', 'BACON AHUMADO 454 GR', '454.000', '720', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1720', 'CHULETA AHUMADA (BANDEJA)', '454.000', '-23', '2018-07-11', '2');
@@ -1586,7 +1584,7 @@ INSERT INTO `productos` VALUES ('1702', 'BACON AHUMADO A GRANEL', '454.000', '40
 INSERT INTO `productos` VALUES ('1721', 'CHULETA AHUMADA A GRANEL', '454.000', '623', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1723', 'CHULETA PREFORMADA ', '454.000', '325', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1241', 'SALCHICHA DESAYUNO DE POLLO', '454.000', '185', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3430', 'REC.MORTADELA  ', '454.000', '467', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('3430', 'REC.MORTADELA  ', '454.000', '464', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('3460', 'REC.SALAMI', '454.000', '91', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('3410', 'REC.SALCHICHA', '454.000', '1136', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('3420', 'REC. JAMON DE CERDO (PRENSADO)', '454.000', '2714', '2018-07-11', '0');
@@ -1608,7 +1606,7 @@ INSERT INTO `productos` VALUES ('1773', 'POLLO AHUMADO PIEZA (PSMT)', '454.000',
 INSERT INTO `productos` VALUES ('1774', 'ROLLER HAM AHUMADO (PSMT)', '454.000', '-23', '2018-07-11', '2');
 INSERT INTO `productos` VALUES ('1791', 'PASTRAMI', '454.000', '-23', '2018-07-11', '2');
 INSERT INTO `productos` VALUES ('1709', 'BACON PSMAT 5 LIB', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1795', 'ROAST BEEF LIBRA', '454.000', '417', '2018-07-11', '0');
+INSERT INTO `productos` VALUES ('1795', 'ROAST BEEF LIBRA', '454.000', '416', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1794', 'PASTRAMI LIBRA', '454.000', '334', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1793', 'ROAST BEET PIEZA PIEZA/LIBRA', '454.000', '155', '2018-07-11', '0');
 INSERT INTO `productos` VALUES ('1279', 'Salchicha Jumbo 2.3', '1000.000', '70', '2018-07-11', '0');
