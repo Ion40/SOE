@@ -699,8 +699,8 @@ function Info(callback, fecha, div) {
 					"<td>"+item["LBS"]+"</td>"+
 					"<td>"+item["FechaCreacion"]+"</td>"+
 					"<td>"+item["Tipo"]+"</td>"+
-					"<td class='center'><a class='btn-floating blue dropdown-trigger' data-target='dropdown"+item["Tipo"]+"' href='javascript:void(0)'><i class='material-icons'>menu</i></a></td>"+
-						'<ul id="dropdown'+item["Tipo"]+'" class="dropdown-content">'+
+					"<td class='center'><a class='btn-floating blue dropdown-trigger' data-target='dropdown"+item["Tipo"]+item["FechaEntrega"]+"' href='javascript:void(0)'><i class='material-icons'>menu</i></a></td>"+
+						'<ul id="dropdown'+item["Tipo"]+item["FechaEntrega"]+'" class="dropdown-content">'+
 							'<li id=""><a  href="DetalleConsolidado/'+item["FechaEntrega"]+"/"+item["Tipo"]+'">Detalles</a></li>'+
 							'<li><a target="_blank" href="RemisionCons/'+item["FechaEntrega"]+"/"+item["Tipo"]+'">Remision</a></li>'+
 							'<li class="divider" tabindex="-1"></li>'+

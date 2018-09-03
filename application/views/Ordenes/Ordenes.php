@@ -84,46 +84,29 @@
 							<div class="div-cont">
 								<table id="tblOrdenes" class="table striped">
 									<thead>
-										<?php 
-											if ($this->session->userdata("RolUser") == 4 || $this->session->userdata("RolUser") == 5) {
-												echo '
 												<tr class="tblcabecera">
 												<th class="center-align">Fecha</th>
 												<th class="center-align">Unidades</th>
-												<th class="center-align">Estado</th>
-												<th class="center-align">Detalles</th>
-											</tr>
-												';
-											}else{
-												echo '
-												<tr class="tblcabecera">
-												<th style="display:none;" class="center-align">codigoU</th>
-												<th class="center-align">Supervisor</th>
-												<th class="center-align">Fecha</th>
-												<th class="center-align">Unidades</th>
-												<th class="center-align">LBS</th>
 												<th class="center-align">Estado</th>
 												<th class="center-align">Detalles</th>
 												<th class="center-align">Acciones</th>
 											</tr>
-												';
-											}
-										?>
 									</thead>
 									<tbody>
 										<?php
-										$estado;
-											if($this->session->userdata("RolUser")==4 || $this->session->userdata("RolUser") == 5){
 												if (!$ordenes) {
 												} else {
 													foreach($ordenes as $key){
-														$key["Estado"] = ($key["Estado"] == 0) ? $estado= "<i class='blue-text material-icons'>check</i>" : $estado= "<i class='green-text material-icons'>done_all</i>";
 														echo "
 															<tr>
 																<td>".$key["FechaEntrega"]."</td>
-																<td>".number_format($key["Unidades"],2)."</td>
-																<td class='center-align'>".$estado."</td>
-																<td class='center detalles'>
+																<td>".number_format($key["Unidades"],2)."</td>";
+																if($key["Estado"]==1){
+																	echo "<td class='center-align'><i class='material-icons green-text'>done_all</i></td>";
+																}else{
+																	echo "<td class='center-align'><i class='material-icons blue-text'>check</i></td>";
+																}
+																echo "<td class='center detalles'>
 																  <i id='detail1".$key["FechaEntrega"]."' class='blue-text material-icons'>expand_more</i>
 																  <i id='detail2".$key["FechaEntrega"]."' style='display:none;' class='blue-text material-icons'>expand_less</i> 	
 																  <div id='loader".$key['FechaEntrega']."' style='display:none;' class='preloader-wrapper small active' >
@@ -138,49 +121,11 @@
 																	</div>
 																</div>
 																</td>
-															</tr>
-														";
-													}
-												}
-											}else{
-												if(!$ordenes2){
-												}
-												else{
-													foreach ($ordenes2 as $key) {
-														if ($key["Usuario"] != 17)
-														{
-															echo "
-																<tr>
-																	<td style='display:none;'>".$key["Usuario"]."</td>
-																	<td>".$key["Nombre"]."</td>
-																	<td>".$key["FechaEntrega"]."</td>
-																	<td>".number_format($key["Unidades"],2)."</td>
-																	<td>".number_format($key["LBS"],2)."</td>";
-																	if($key["Estado"]==1){
-																		echo "<td class='center-align'><i class='material-icons green-text'>done_all</i></td>";
-																	}else{
-																		echo "<td class='center-align'><i class='material-icons blue-text'>check</i></td>";
-																	}
-																	echo "<td class='center detalles1'>
-																	  <i id='detail1".$key["Usuario"]."' class='blue-text material-icons'>expand_more</i>
-																	  <i id='detail2".$key["Usuario"]."' style='display:none;' class='blue-text material-icons'>expand_less</i> 	
-																	  <div id='loader".$key['Usuario']."' style='display:none;' class='preloader-wrapper small active' >
-																		<div class='spinner-layer spinner-blue-only'>
-																		<div style='overflow: visible!important;' class='circle-clipper left'>
-																			<div class='circle'></div>
-																		</div><div class='gap-patch'>
-																			<div class='circle'></div>
-																		</div><div style='overflow: visible!important;' class='circle-clipper right'>
-																			<div class='circle'></div>
-																		</div>
-																		</div>
-																	</div>
-																	</td>
-																	<td class='center-align'>
-																		<a class='dropdown-trigger btn-floating teal' href='#' data-target='dropdown".$key["Usuario"]."'><i class='material-icons'>edit</i></a>
+																<td class='center-align'>
+																		<a class='dropdown-trigger btn-floating teal' href='#' data-target='dropdown".$key["Usuario"]."".$key["FechaEntrega"]."'><i class='material-icons'>edit</i></a>
 			
 																			<!-- Dropdown Structure -->
-																			<ul id='dropdown".$key["Usuario"]."' class='dropdown-content'>";
+																			<ul id='dropdown".$key["Usuario"]."".$key["FechaEntrega"]."' class='dropdown-content'>";
 																	if ($key["Estado"] == 0) {
 																		echo "<li><a href='javascript:void(0)' onclick='estadoVisto(".'"'.$key["FechaEntrega"].'","'.$key["Usuario"].'","'.$key["Estado"].'"'.")'>Visto</a></li>";
 																	}else{
@@ -188,12 +133,10 @@
 																	}
 																	echo "</ul>
 																		</td>	
-																</tr>
-															";
-														}
+															</tr>
+														";
 													}
 												}
-											}
 										?>
 									</tbody>
 								</table>

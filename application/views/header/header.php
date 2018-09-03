@@ -134,9 +134,7 @@
                                 <li>
                                     <a href="Inventario">Inventario</a>
                                 </li>
-                                <li>
-                                    <a href="Monitoreo">Monitoreo</a>
-                                </li>
+                                
                                 <li>
                                     <a href="Consolidado">Consolidado</a>
                                 </li>
@@ -168,6 +166,9 @@
                             </li>
                             <li>
                                     <a href="Inventario">Inventario</a>
+                            </li>
+                            <li>
+                                <a href="Consolidado">Consolidado</a>
                             </li>
                            <li>
                                     <a href="javascript:void(0)" class="contraseña">Cambiar Contraseña</a>

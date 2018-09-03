@@ -34,7 +34,7 @@ class Clientes_model extends CI_Model
 		$query = $this->db->get_where(
 			"clientes",
 			array(
-				"IdUsuario" => $this->session->userdata("id")
+				"RolUsuario" => $this->session->userdata("RolUser")
 			    ));
 		foreach ($query->result_array() as $item) {
 			$estado="";
@@ -69,7 +69,7 @@ class Clientes_model extends CI_Model
 	public function guardarCliente($nombre,$ruta){
 		date_default_timezone_set("America/Managua");
 		$data = array(
-			"IdUsuario" => $this->session->userdata("id"),
+			"IdUsuario" => $this->session->userdata("RolUser"),
 			"Nombre" => $nombre,
 			"Ruta" => $ruta,
 			"Estado" => 1,

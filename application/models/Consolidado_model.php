@@ -7,7 +7,9 @@ class Consolidado_model extends CI_Model
 	}
 
 	public function getFechaEntrega(){
-		$query = $this->db->query("select distinct FechaEntrega from ordenes order by FechaEntrega desc");
+		$query = $this->db->query("select distinct FechaEntrega from ordenes 
+								   where Usuario = '".$this->session->userdata('id')."' 
+		                           order by FechaEntrega desc");
 		if ($query->num_rows()>0) {
 			return $query->result_array();
 		}
@@ -79,7 +81,8 @@ class Consolidado_model extends CI_Model
                 "Saldo" => $array[6],
                 "SaldoRestante" => $array[7],
                 "Estado" => $array[8],
-				"Tipo" => "U"
+				"Tipo" => "U",
+				"Usuario" => $this->session->userdata("id")
             );
 			$this->db->insert("consolidado",$insertConsolidado);
             /*$query = $this->db->get_where("consolidado",array("Codigo" => $array[0], "FechaEntrega" => $array[5]));
@@ -100,6 +103,7 @@ class Consolidado_model extends CI_Model
      }
  		
  		public function getConsolidado(){
+			 $this->db->where("Usuario",$this->session->userdata("id"));
  			$query = $this->db->get("view_consolidado");
  			if ($query->num_rows() > 0) {
  				return $query->result_array();
@@ -284,7 +288,8 @@ class Consolidado_model extends CI_Model
 				"Saldo" => $array[6],
 				"SaldoRestante" => $array[7],
 				"Estado" => $array[8],
-				"Tipo" => "P"
+				"Tipo" => "P",
+				"Usuario" => $this->session->userdata("id")
 			);
 			/*$result = $this->validarCons($array[5],"U");
 			if ($result=== true){
@@ -311,7 +316,8 @@ class Consolidado_model extends CI_Model
 				"Saldo" => $array[6],
 				"SaldoRestante" => $array[7],
 				"Estado" => $array[8],
-				"Tipo" => "O"
+				"Tipo" => "O",
+				"Usuario" => $this->session->userdata("id")
 			);
 			/*$result = $this->validarCons($array[5],"U");
 			if ($result=== true){

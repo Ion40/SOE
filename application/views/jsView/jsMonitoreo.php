@@ -16,7 +16,7 @@ var table = $("#tblLogs").DataTable({
         "paging": true,
        /* "dom": 'T<"clear">lfrtip',
         "tableTools": {
-            "sSwfPath": "<?php// echo base_url(); ?>assets/data/swf/copy_csv_xls_pdf.swf",
+            "sSwfPath": "<// echo base_url(); ?>assets/data/swf/copy_csv_xls_pdf.swf",
 		},*/
         "pagingType": "full_numbers",
         "lengthMenu": [

@@ -45,7 +45,7 @@ class OrdenesS_model extends CI_Model
 
 	public function getCliente()
 	{
-		$this->db->where("IdUsuario",$this->session->userdata("id"));
+		$this->db->where("RolUsuario",$this->session->userdata("RolUser"));
 		$this->db->where("Estado",1);
 		$query = $this->db->get("clientes");
 		if ($query->num_rows() > 0)

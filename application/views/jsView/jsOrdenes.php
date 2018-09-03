@@ -221,8 +221,8 @@ function detalle(callback,fecha,div){
 					"<td>"+item["Nombre"]+"</td>"+
 					"<td>"+item["Unidades"]+"</td>"+
 					"<td>"+item["LBS"]+"</td>"+	
-                    "<td class='center'><a class='btn-floating blue dropdown-trigger' data-target='dropdown"+item["Ruta"]+"' href='javascript:void(0)'><i class='material-icons'>menu</i></a></td>"+	
-                    '<ul id="dropdown'+item["Ruta"]+'" class="dropdown-content">'+
+                    "<td class='center'><a class='btn-floating blue dropdown-trigger' data-target='dropdown"+item["Ruta"]+item["FechaEntrega"]+"' href='javascript:void(0)'><i class='material-icons'>menu</i></a></td>"+	
+                    '<ul id="dropdown'+item["Ruta"]+item["FechaEntrega"]+'" class="dropdown-content">'+
                             '<li id="estado"><a class="modal-trigger" href="#modal1" onclick="editar('+item["Ruta"]+","+"'"+item["FechaEntrega"]+"'"+","+"'"+item["Vendedor"]+"'"+","+item["Estado"]+","+item["Usuario"]+')">Editar</a></li>'+
                             '<li><a target="_blank" href="remisionOrdSupervisor/'+item["Ruta"]+'/'+item["FechaEntrega"]+'">Remision</a></li>'+
                         '</ul>';	
@@ -368,7 +368,6 @@ function editar (ruta,fecha,vendedor,estado,idUser) {
 	$("#hFecha").html(fecha);
 	$("#hRuta").html(ruta);
 	$("#hVendedor").html(vendedor);
-	if (estado == 1) {
 		if (estado == 1) {
 			$("#btnUpdateOr").hide();
 		} else {
@@ -426,7 +425,6 @@ function editar (ruta,fecha,vendedor,estado,idUser) {
 				}
 			}
 		});
-	}
 }
 
 function cambiarUnidades(){
