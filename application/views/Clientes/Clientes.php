@@ -69,17 +69,28 @@
 			</div>
 			<div class="col s6 m6 l6">
 				<label for="lblRuta" id="lblRuta">Rutas</label>
-				<select name="ruta" id="ruta" class="browser-default chosen-select">
-					<option selected disabled>Elige una ruta</option>
+				<select name="ruta" id="ruta" class="browser-default chosen-select" multiple>
+					<!--<option selected disabled>Elige una ruta</option>-->
 					<?php
-					  if (!$rutas){
+					  if ($this->session->userdata("RolUser") != 7) {
+						if (!$rutas){
+						}else{
+							foreach ($rutas as $key) {
+								echo "
+									<option value='".$key["Rutas"]."'>Ruta# ".$key["Rutas"]."</option>	
+								";
+							}
+						}
 					  }else{
-						  foreach ($rutas as $key) {
-							  echo "
-							  	<option value='".$key["Rutas"]."'>Ruta# ".$key["Rutas"]."</option>	
-							  ";
-					  	}
-					  }
+						if (!$rutas){
+						}else{
+							foreach ($rutas as $key) {
+								echo "
+									<option value='".$key["Rutas"]."'>Ruta# ".$key["Rutas"]."</option>	
+								";
+							}
+						}
+					  }	
 					?>
 				</select>
 			</div>

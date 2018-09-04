@@ -69,7 +69,7 @@ class Clientes_model extends CI_Model
 	public function guardarCliente($nombre,$ruta){
 		date_default_timezone_set("America/Managua");
 		$data = array(
-			"IdUsuario" => $this->session->userdata("RolUser"),
+			"RolUsuario" => $this->session->userdata("RolUser"),
 			"Nombre" => $nombre,
 			"Ruta" => $ruta,
 			"Estado" => 1,
