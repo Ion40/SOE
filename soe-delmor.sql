@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 100131
 File Encoding         : 65001
 
-Date: 2018-09-03 17:02:13
+Date: 2018-09-22 17:32:51
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,7 +41,7 @@ INSERT INTO `clientes` VALUES ('6', '8', 'Unión Linda Vista', '9', '', '2018-0
 INSERT INTO `clientes` VALUES ('7', '8', 'Palí 27 de Mayo', '9', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('8', '8', 'MP  Santana', '9', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('9', '8', 'Colonia Las Brisas', '9', '', '2018-06-30');
-INSERT INTO `clientes` VALUES ('10', '8', 'Walmart', '9', '\0', '2018-06-30');
+INSERT INTO `clientes` VALUES ('10', '8', 'Walmart', '9', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('11', '8', 'Colonia Veracruz', '9', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('12', '8', 'Comisariato Policía', '9', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('13', '8', 'Pali Zumen', '9', '', '2018-06-30');
@@ -131,7 +131,7 @@ INSERT INTO `clientes` VALUES ('96', '8', 'Pali San Juan del Sur', '11', '', '2
 INSERT INTO `clientes` VALUES ('97', '8', 'Colonia Chinandega Centro', '11', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('98', '8', 'MP  Laborío', '11', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('99', '8', 'Colonia Jinotepe', '11', '', '2018-06-30');
-INSERT INTO `clientes` VALUES ('100', '8', 'Pali Sébaco', '24', '', '2018-06-30');
+INSERT INTO `clientes` VALUES ('100', '8', 'Pali Sébaco', '24', '\0', '2018-06-30');
 INSERT INTO `clientes` VALUES ('101', '8', 'Colonia Estelí', '24', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('102', '8', 'Pali Jinotega', '24', '', '2018-06-30');
 INSERT INTO `clientes` VALUES ('103', '8', 'Pali Las Flores', '24', '', '2018-06-30');
@@ -361,6 +361,11 @@ INSERT INTO `consec_consolidado` VALUES ('2', 'Consecutivo', 'O', '2018-08-06', 
 INSERT INTO `consec_consolidado` VALUES ('3', 'Consecutivo', 'O', '2018-08-06', '15');
 INSERT INTO `consec_consolidado` VALUES ('4', 'Consecutivo', 'U', '2018-08-06', '15');
 INSERT INTO `consec_consolidado` VALUES ('5', 'Consecutivo', 'O', '2018-08-02', '8');
+INSERT INTO `consec_consolidado` VALUES ('6', 'Consecutivo', 'O', '2018-05-21', '12');
+INSERT INTO `consec_consolidado` VALUES ('7', 'Consecutivo', 'O', '2018-05-21', '12');
+INSERT INTO `consec_consolidado` VALUES ('8', 'Consecutivo', 'O', '2018-05-21', '12');
+INSERT INTO `consec_consolidado` VALUES ('9', 'Consecutivo', 'O', '2018-05-21', '12');
+INSERT INTO `consec_consolidado` VALUES ('10', 'Consecutivo', 'O', '2018-05-21', '12');
 
 -- ----------------------------
 -- Table structure for consolidado
@@ -384,6 +389,27 @@ CREATE TABLE `consolidado` (
 -- ----------------------------
 -- Records of consolidado
 -- ----------------------------
+INSERT INTO `consolidado` VALUES ('1109', 'MORT-BOLOGNA (225 GR) (1102)', '225.000', '23.000', '11.40', '2018-05-21', '2018-09-22', '859.000', '836.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '72.000', '35.68', '2018-05-21', '2018-09-22', '2060.000', '1988.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '46.000', '46.00', '2018-05-21', '2018-09-22', '682.830', '636.830', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1119', 'MORT-POPULAR (PAQUETE)', '454.000', '320.000', '320.00', '2018-05-21', '2018-09-22', '1794.000', '1474.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1121', 'MORT-ECONOMICA  (GRANEL/PIEZA)', '454.000', '45.000', '45.00', '2018-05-21', '2018-09-22', '261.240', '216.240', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1123', 'MORT-ECONOMICA (125 GR)', '125.000', '387.000', '106.56', '2018-05-21', '2018-09-22', '8763.000', '8376.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1126', 'MORT-ECONOMICA (454 GR)', '454.000', '3.000', '3.00', '2018-05-21', '2018-09-22', '1297.000', '1294.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '288.000', '144.00', '2018-05-21', '2018-09-22', '6598.000', '6310.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1130', 'MORT-JAMONADA  (GRANEL/PIEZA)', '454.000', '6.000', '6.00', '2018-05-21', '2018-09-22', '399.720', '393.720', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1131', 'MORT. JAMONADA (150 GR.)', '150.000', '22.000', '7.27', '2018-05-21', '2018-09-22', '1014.000', '992.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1135', 'MORT-CON TOCINO (225GR)', '225.000', '49.000', '24.28', '2018-05-21', '2018-09-22', '1357.000', '1308.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1137', 'MORT-JAMONADA DELMOR (454 GR)', '454.000', '78.000', '78.00', '2018-05-21', '2018-09-22', '2101.000', '2023.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1210', 'HOT DOG (170 GR.)', '170.000', '239.000', '89.49', '2018-05-21', '2018-09-22', '4581.000', '4342.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1217', 'SALCHI. HOT DOG POPUL. ( 22 UNDS)  (0409 GR.)', '409.000', '185.000', '166.67', '2018-05-21', '2018-09-22', '2018.000', '1833.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1221', 'SALAMI         PIEZA        (GRANEL)', '454.000', '454.000', '454.00', '2018-05-21', '2018-09-22', '-265.900', '-719.900', '2', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1227', 'SALAMI  CORTADO PREMIUN PIZZA(1224)/ PARA SUPER', '454.000', '360.000', '360.00', '2018-05-21', '2018-09-22', '769.700', '409.700', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1640', 'MORT-    POLLO  (150 GR.)', '150.000', '24.000', '7.93', '2018-05-21', '2018-09-22', '2064.000', '2040.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1645', 'MORT. DE PAVO', '454.000', '0.000', '0.00', '2018-05-21', '2018-09-22', '826.000', '826.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1650', 'SALCH-  POLLO             (170 GR.)', '170.000', '54.000', '20.22', '2018-05-21', '2018-09-22', '2061.000', '2007.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1803', 'MORT. FRANKFURT (125 GR.)', '125.000', '36.000', '9.91', '2018-05-21', '2018-09-22', '4133.000', '4097.000', '0', 'O', '12');
+INSERT INTO `consolidado` VALUES ('1811', 'SALCH-  FRANKFURT  (170 GR.)', '170.000', '270.000', '101.10', '2018-05-21', '2018-09-22', '3024.000', '2754.000', '0', 'O', '12');
 
 -- ----------------------------
 -- Table structure for consolidadom
@@ -409,6 +435,7 @@ CREATE TABLE `consolidadom` (
 -- ----------------------------
 -- Records of consolidadom
 -- ----------------------------
+INSERT INTO `consolidadom` VALUES ('1101', 'MORT BOLOGNA     GRANEL', '454', '2018-09-22', '12.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00');
 
 -- ----------------------------
 -- Table structure for consolidado_s
@@ -529,17 +556,18 @@ CREATE TABLE `devoluciones` (
   `Codigo` int(11) DEFAULT NULL,
   `Descripcion` varchar(255) DEFAULT NULL,
   `GR` varchar(255) DEFAULT NULL,
-  `Total` double DEFAULT NULL,
+  `CantDev` double DEFAULT NULL,
   `Libras` double DEFAULT NULL,
   `FechaEntrega` date DEFAULT NULL,
   `FechaCreacion` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
   `Estado` bit(1) DEFAULT NULL,
   PRIMARY KEY (`IdDevolucion`) USING BTREE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of devoluciones
 -- ----------------------------
+INSERT INTO `devoluciones` VALUES ('5', '1101', 'MORT-BOLOGNA     (GRANEL)', '454', '20', '20', '2018-05-21', '2018-09-22 00:00:00', '');
 
 -- ----------------------------
 -- Table structure for logs
@@ -693,6 +721,68 @@ INSERT INTO `logs` VALUES ('8', 'Jorge Rivas', 'El usuario Jorge Rivas cerro ses
 INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas inicio sesion', '2018-09-03 16:43:54');
 INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'Generó una nueva remision de orden con ruta 7 y fecha 2018-05-21 ', '2018-09-03 16:58:58');
 INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas cerro sesion', '2018-09-03 17:01:50');
+INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas inicio sesion', '2018-09-04 08:08:34');
+INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas cerro sesion', '2018-09-04 08:10:24');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi inicio sesion', '2018-09-04 08:10:49');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'Generó una nueva remision de orden con ruta 12 y fecha 2018-07-09', '2018-09-04 08:27:07');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi cerro sesion', '2018-09-04 08:27:38');
+INSERT INTO `logs` VALUES ('14', 'Teresa Miranda', 'El usuario Teresa Miranda inicio sesion', '2018-09-04 08:27:43');
+INSERT INTO `logs` VALUES ('14', 'Teresa Miranda', 'El usuario Teresa Miranda cerro sesion', '2018-09-04 08:30:17');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica inicio sesion', '2018-09-04 08:30:26');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica cerro sesion', '2018-09-04 08:31:36');
+INSERT INTO `logs` VALUES ('8', 'Jorge Rivas', 'El usuario Jorge Rivas inicio sesion', '2018-09-04 08:31:47');
+INSERT INTO `logs` VALUES ('8', 'Jorge Rivas', 'El usuario Jorge Rivas cerro sesion', '2018-09-04 08:40:28');
+INSERT INTO `logs` VALUES ('14', 'Teresa Miranda', 'El usuario Teresa Miranda inicio sesion', '2018-09-04 08:40:34');
+INSERT INTO `logs` VALUES ('14', 'Teresa Miranda', 'El usuario Teresa Miranda cerro sesion', '2018-09-04 08:40:42');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi inicio sesion', '2018-09-04 08:40:48');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi cerro sesion', '2018-09-04 08:40:58');
+INSERT INTO `logs` VALUES ('14', 'Teresa Miranda', 'El usuario Teresa Miranda inicio sesion', '2018-09-04 08:41:02');
+INSERT INTO `logs` VALUES ('14', 'Teresa Miranda', 'El usuario Teresa Miranda cerro sesion', '2018-09-04 08:46:39');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi inicio sesion', '2018-09-04 08:46:47');
+INSERT INTO `logs` VALUES ('15', 'Sugey Mazzocchi', 'El usuario Sugey Mazzocchi cerro sesion', '2018-09-04 08:51:28');
+INSERT INTO `logs` VALUES ('14', 'Teresa Miranda', 'El usuario Teresa Miranda inicio sesion', '2018-09-04 08:51:48');
+INSERT INTO `logs` VALUES ('10', 'Administrador', 'El usuario Administrador inicio sesion', '2018-09-04 16:06:28');
+INSERT INTO `logs` VALUES ('10', 'Administrador', 'El usuario Administrador cerro sesion', '2018-09-04 16:06:36');
+INSERT INTO `logs` VALUES ('8', 'Jorge Rivas', 'El usuario Jorge Rivas inicio sesion', '2018-09-04 16:06:41');
+INSERT INTO `logs` VALUES ('8', 'Jorge Rivas', 'El usuario Jorge Rivas cerro sesion', '2018-09-04 16:39:48');
+INSERT INTO `logs` VALUES (null, null, 'El usuario  cerro sesion', '2018-09-22 14:26:29');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica inicio sesion', '2018-09-22 14:26:35');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica inicio sesion', '2018-09-22 15:40:09');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1111 ', '2018-09-22 15:41:48');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1111 ', '2018-09-22 15:41:48');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1113 ', '2018-09-22 15:41:51');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1123 ', '2018-09-22 15:43:13');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1123 ', '2018-09-22 15:43:13');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1123 ', '2018-09-22 15:43:31');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1123 ', '2018-09-22 15:43:47');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1123 ', '2018-09-22 15:44:04');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:35:16');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:35:26');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:37:07');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:37:19');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:38:27');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:39:21');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:39:27');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:42:16');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto  ', '2018-09-22 16:43:36');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:46:20');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:46:35');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:49:06');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:49:14');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:50:41');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:50:49');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:50:54');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:51:04');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 16:51:19');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica cerro sesion', '2018-09-22 17:04:38');
+INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas inicio sesion', '2018-09-22 17:04:45');
+INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas cerro sesion', '2018-09-22 17:04:55');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica inicio sesion', '2018-09-22 17:05:08');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica cerro sesion', '2018-09-22 17:05:56');
+INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas inicio sesion', '2018-09-22 17:06:05');
+INSERT INTO `logs` VALUES ('12', 'Jean Cardenas', 'El usuario Jean Cardenas cerro sesion', '2018-09-22 17:10:02');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'El usuario Monica inicio sesion', '2018-09-22 17:10:09');
+INSERT INTO `logs` VALUES ('13', 'Monica', 'Monica actualizo el saldo del producto 1101 ', '2018-09-22 17:24:34');
 
 -- ----------------------------
 -- Table structure for ordenes
@@ -1718,7 +1808,8 @@ CREATE TABLE `productos` (
   `Codigo` int(11) NOT NULL,
   `Descripcion` varchar(255) DEFAULT NULL,
   `GRM` decimal(10,3) DEFAULT NULL,
-  `Saldo` double(10,0) DEFAULT NULL,
+  `Saldo` double(10,2) DEFAULT NULL,
+  `Libras` double(10,2) DEFAULT NULL,
   `FechaCarga` date DEFAULT NULL,
   `Estado` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
@@ -1726,149 +1817,93 @@ CREATE TABLE `productos` (
 -- ----------------------------
 -- Records of productos
 -- ----------------------------
-INSERT INTO `productos` VALUES ('1123', 'MORT-ECONOMICA (125 GR)', '125.000', '7013', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1640', 'MORT-    POLLO  (150 GR.)', '150.000', '2238', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1137', 'MORT-JAMONADA DELMOR (454 GR)', '454.000', '1015', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1131', 'MORT. JAMONADA (150 GR.)', '150.000', '2397', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1112', 'MORT-CHILTOMA  (150 GR)', '150.000', '-99', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1645', 'MORT. DE PAVO', '454.000', '1084', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1109', 'MORT-BOLOGNA (225 GR) (1102)', '225.000', '1205', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '4383', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1119', 'MORT-POPULAR (PAQUETE)', '454.000', '2665', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1193', 'MORT- CON TOCINO DELMOR (454 GR)', '454.000', '919', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '1738', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1803', 'MORT. FRANKFURT (125 GR.)', '125.000', '2432', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1190', 'MORT-CON TOCINO (150 GR.)', '150.000', '-33', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '1046', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1132', 'MORT-JAMONADA (225 GR)', '225.000', '789', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1134', 'MORT-ECONOMICA (225 GR)', '225.000', '1328', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1107', 'MORT-BOLOGNA DELMOR (454 GR)', '454.000', '1323', '2018-07-11', null);
-INSERT INTO `productos` VALUES ('1121', 'MORT-ECONOMICA  (GRANEL/PIEZA)', '454.000', '494', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1111', 'MORT-CHILTOMA  (GRANEL / PIEZA)', '454.000', '250', '2018-07-11', null);
-INSERT INTO `productos` VALUES ('1101', 'MORT-BOLOGNA     (GRANEL)', '454.000', '-104', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1130', 'MORT-JAMONADA  (GRANEL/PIEZA)', '454.000', '303', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1641', 'MORT- POLLO   (GRANEL)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1135', 'MORT-CON TOCINO (225GR)', '225.000', '1252', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1126', 'MORT-ECONOMICA (454 GR)', '454.000', '1096', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1642', 'MORT-DE POLLO DELMOR (454 GR)', '454.000', '1926', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1245', 'SALCHICHA DESAYUNO PSMAT', '1000.000', '47', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1210', 'HOT DOG (170 GR.)', '170.000', '4566', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1217', 'SALCHI. HOT DOG POPUL. ( 22 UNDS)  (0409 GR.)', '409.000', '1762', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1218', 'SALCHI. HOT DOG  POPUL. (12 UND)   (260 GR.)', '260.000', '2779', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1293', 'SALCHICHA ALEMANA KILO', '1000.000', '266', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1221', 'SALAMI         PIEZA        (GRANEL)', '454.000', '398', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1650', 'SALCH-  POLLO             (170 GR.)', '170.000', '2546', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1811', 'SALCH-  FRANKFURT  (170 GR.)', '170.000', '4704', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1812', 'SALCHICHA-  BOLOGNA       (GRANEL)', '454.000', '613', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1214', 'SALCHICHA - POPULAR        (GRANEL)( 100 UND)', '454.000', '3219', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1819', 'S.JUMBO FRANK (12 UN)  2.5', '1135.000', '121', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1813', 'SALCH JUMBO FRANKFURT GRAN/36 UND.(F.ARTIFICIAL)', '454.000', '1642', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1223', 'SALAMI PREMIUM 150', '150.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1670', 'SALCHICHON POLLO       (200  GR)', '200.000', '680', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1970', 'SALCHICHON RES            (200  GR)', '200.000', '7942', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1975', 'SALCHICHON PICANTE    (200  GR)', '200.000', '9309', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1980', 'SALCHICHON TUBO PICANTE (MANGUERA GRANEL)', '454.000', '1238', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1971', 'SALCHICHON TUBO RES (MANGUERA GRANEL)', '454.000', '1448', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1655', 'SALCHICHA.  PAVO JUMBO 590', '590.000', '698', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1810', 'SALCH- FRANKFORT (200 GR)', '200.000', '3839', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1227', 'SALAMI  CORTADO PREMIUN PIZZA(1224)/ PARA SUPER', '454.000', '858', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1290', 'SALCHICHA -  ALEMANA       454', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1264', 'SALCHICHA-  JUMBO  908', '908.000', '421', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1275', 'SALCHICHA MUNICH KILO', '1000.000', '-33', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1232', 'PEPERONI 454 GR', '454.000', '-27', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1230', 'PEPERONI GRANEL', '454.000', '977', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1231', 'PEPERONI 1000 (GRANEL)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1243', 'SALCH- DESAYUNO ESPECIAL (GRANEL)', '454.000', '986', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1255', 'SALCH- PARRILLERA (360GR)', '360.000', '1538', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1292', 'SALCH- ALEMANA GRANEL', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1257', 'SALCH-PARRILLERA (GRANEL)', '454.000', '353', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1258', 'SALCHICHA PARRILERA 1000 (GRANEL)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1270', 'SALCHICHA MUNICH (454 GR)', '454.000', '-37', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1272', 'SALCHICHA MUNICH GRANEL', '454.000', '-33', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1470', 'CHORIZO ARGENTINO (454 GR )', '454.000', '17', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1820', 'SALCHICHA FRANKFURT 454 GR', '454.000', '2057', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1233', 'SALAMI PREMIUM 454 GR', '454.000', '141', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1234', 'SALAMI PREMIUN 1000 (GRANEL)', '454.000', '-33', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1254', 'SALCHICHA PARRILLERA 454 GR', '454.000', '694', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1204', 'SALCHICHA HOT DOG 454GR', '454.000', '590', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1334', 'JAMON POPULAR  (LIBRA.)', '454.000', '2464', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1335', 'JAMON PIC NIC (125 GR)', '125.000', '2458', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1336', 'JAMON POPULAR (227 GR)', '227.000', '2084', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1345', 'JAMON PRENSADO (125 GR)', '125.000', '3192', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1376', 'JAMON PIC-NIC  454', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1620', 'JAMON POLLO    (150 GR.)', '150.000', '1139', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1373', 'JAMON PRENSADO (LIBRA)', '454.000', '1337', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1630', 'JAMON PAVO', '454.000', '253', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1341', 'JAMON PRENSADO  (PIEZA)', '454.000', '1132', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1621', 'JAMON POLLO           (PIEZA)', '454.000', '199', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1321', 'JAMON PIERNA          (PIEZA)', '454.000', '244', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1331', 'JAMON PIC NIC --GRANEL CORTADO (PIEZA)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1325', 'JAMON PIERNA 454', '454.000', '311', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1353', 'JAMON PRENSADO CORTADO Y ARMADO', '454.000', '1669', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1643', 'JAMON DE POLLO DELMOR 454 GR', '454.000', '135', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1401', 'CHORIZO CRIOLLO (227 GR)', '227.000', '18527', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1402', 'CHORIZO CRIOLLO (GRANEL)', '454.000', '633', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1403', 'CHORIZO CRIOLLO (454 GR)', '454.000', '995', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1421', 'CHORIZO ESPAÑOL  (GRANEL)', '454.000', '313', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1473', 'CHORIZO ARGENTINO (GRANEL )', '454.000', '427', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('2993', 'S.VIENA PICANTE', '150.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1502', 'CARNE MOLIDA POLLO    (LIBRA)', '454.000', '3204', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1503', 'CARNE MOLIDA RES         (LIBRA)', '454.000', '3477', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1505', 'CARNE MOLIDA RES         GRANEL', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1504', 'CARNE MOLIDA CERDO   (LIBRA)', '454.000', '153', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('85120', 'CARNE  BISTEC PIM.LIMON (LIBRA)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1701', 'BACON AHUMADO  ECONOMAX  (200 G)', '200.000', '169', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1622', 'JAMON POLLO  ECONOMAX (150 G)', '150.000', '201', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1333', 'JAMON POPULAR   ECONOMAX  (150 G)', '150.000', '1067', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1342', 'JAMON PRENSADO  ECONOMAX  (150 G)', '150.000', '2662', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1660', 'SALCH- POLLO   ECONOMAX  (425 G)', '425.000', '107', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1250', 'SALCH-JUMBO ECONOMAX (378 G)', '378.000', '669', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1251', 'SALCH-PARRILLERO ECONOMAX (360 G)', '360.000', '92', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1703', 'BACON AHUMADO (200 GR)', '200.000', '1771', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1706', 'BACON AHUMADO 1000 GR', '454.000', '267', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1707', 'BACON AHUMADO 454 GR', '454.000', '720', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1720', 'CHULETA AHUMADA (BANDEJA)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1762', 'PIERNA AHUMADA ( BANDEJA)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1302', 'JAMON AHUMADO PIEZA', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1760', 'PIERNA AHUMADA CON HUESO', '454.000', '451', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1761', 'PIERNA AHUMADA  SIN HUESO', '454.000', '916', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1711', 'COSTILLA DE CERDO AHUMADA', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1770', 'POLLO AHUMADO (PIEZA)', '454.000', '451', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1772', 'POLLO AHUMADO BANDEJA', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1780', 'ROLLER HAM AHUMADO', '454.000', '1776', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1763', 'PIERNA AHUMADA C/H BANDEJA', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1702', 'BACON AHUMADO A GRANEL', '454.000', '4065', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1721', 'CHULETA AHUMADA A GRANEL', '454.000', '623', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1723', 'CHULETA PREFORMADA ', '454.000', '325', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1241', 'SALCHICHA DESAYUNO DE POLLO', '454.000', '185', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3430', 'REC.MORTADELA  ', '454.000', '464', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3460', 'REC.SALAMI', '454.000', '91', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3410', 'REC.SALCHICHA', '454.000', '1136', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3420', 'REC. JAMON DE CERDO (PRENSADO)', '454.000', '2714', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3421', 'REC. JAMON DE POLLO', '454.000', '908', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3401', 'REC.  BACON AHUMADOS', '454.000', '773', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3422', 'RECORTE DE J.POPULAR', '454.000', '388', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3411', 'REC. SALCHICHA  DELIKATESSEN', '454.000', '1451', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3402', 'REC. DE CHULETA AHUMADA', '454.000', '88', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('3465', 'REC. PEPERONI', '454.000', '263', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1283', 'SALCHICHA NUREMBERG KILO', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1370', 'JAMON PAVO GRANEL', '454.000', '46', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1792', 'ROAST BEEF', '454.000', '-33', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1487', 'TORTA DE CARNE DE RES CLASICA', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1486', 'TORTA P/HAMBUERGUESA (CJA)', '500.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1269', 'SALCHICHA SUPER JUMBO', '1300.000', '703', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1361', 'JAMON VIRGINIA', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1363', 'JAMON VIRGINIA (PSMT)', '1300.000', '248', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1773', 'POLLO AHUMADO PIEZA (PSMT)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1774', 'ROLLER HAM AHUMADO (PSMT)', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1791', 'PASTRAMI', '454.000', '-33', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1709', 'BACON PSMAT 5 LIB', '454.000', '-23', '2018-07-11', '2');
-INSERT INTO `productos` VALUES ('1795', 'ROAST BEEF LIBRA', '454.000', '416', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1794', 'PASTRAMI LIBRA', '454.000', '334', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1793', 'ROAST BEET PIEZA PIEZA/LIBRA', '454.000', '155', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1279', 'Salchicha Jumbo 2.3', '1000.000', '60', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1730', 'JAMON SELVA NEGRA', '454.000', '502', '2018-07-11', '0');
-INSERT INTO `productos` VALUES ('1404', 'CHORIZO CRIOLLO 5LB', '454.000', '-23', '2018-07-11', '2');
+INSERT INTO `productos` VALUES ('1123', 'MORT-ECONOMICA (125 GR)', '125.000', '8376.00', '2519.27', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1640', 'MORT-    POLLO  (150 GR.)', '150.000', '2040.00', '689.87', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1137', 'MORT-JAMONADA DELMOR (454 GR)', '454.000', '2023.00', '2179.00', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1131', 'MORT. JAMONADA (150 GR.)', '150.000', '992.00', '342.29', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1645', 'MORT. DE PAVO', '454.000', '826.00', '826.00', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1109', 'MORT-BOLOGNA (225 GR) (1102)', '225.000', '836.00', '437.11', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1127', 'MORT-POPULAR (½) 227 GRAMOS', '227.000', '6310.00', '3443.00', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1119', 'MORT-POPULAR (PAQUETE)', '454.000', '1474.00', '2114.00', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1193', 'MORT- CON TOCINO DELMOR (454 GR)', '454.000', '399.00', '399.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1113', 'MORT-CHILTOMA  (225 GR)', '225.000', '1988.00', '1056.61', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1803', 'MORT. FRANKFURT (125 GR.)', '125.000', '4097.00', '1147.85', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1117', 'MORT-POPULAR A GRANEL (PIEZA)', '454.000', '636.83', '728.83', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1132', 'MORT-JAMONADA (225 GR)', '225.000', '810.00', '401.43', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1134', 'MORT-ECONOMICA (225 GR)', '225.000', '1599.00', '792.46', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1107', 'MORT-BOLOGNA DELMOR (454 GR)', '454.000', '1930.00', '1930.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1121', 'MORT-ECONOMICA  (GRANEL/PIEZA)', '454.000', '216.24', '306.24', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1111', 'MORT-CHILTOMA  (GRANEL / PIEZA)', '454.000', '356.12', '356.12', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1101', 'MORT-BOLOGNA     (GRANEL)', '454.000', '20.00', '20.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1130', 'MORT-JAMONADA  (GRANEL/PIEZA)', '454.000', '393.72', '405.72', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1135', 'MORT-CON TOCINO (225GR)', '225.000', '1308.00', '696.81', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1126', 'MORT-ECONOMICA (454 GR)', '454.000', '1294.00', '1300.00', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1642', 'MORT-DE POLLO DELMOR (454 GR)', '454.000', '666.00', '666.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1210', 'HOT DOG (170 GR.)', '170.000', '4342.00', '1804.85', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1217', 'SALCHI. HOT DOG POPUL. ( 22 UNDS)  (0409 GR.)', '409.000', '1833.00', '2081.04', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1218', 'SALCHI. HOT DOG  POPUL. (12 UND)   (260 GR.)', '260.000', '5608.00', '3211.63', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1221', 'SALAMI         PIEZA        (GRANEL)', '454.000', '-719.90', '188.10', '2018-09-22', '2');
+INSERT INTO `productos` VALUES ('1650', 'SALCH-  POLLO             (170 GR.)', '170.000', '2007.00', '791.96', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1811', 'SALCH-  FRANKFURT  (170 GR.)', '170.000', '2754.00', '1233.44', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1812', 'SALCHICHA-  BOLOGNA       (GRANEL)', '454.000', '1180.48', '1180.48', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1214', 'SALCHICHA - POPULAR        (GRANEL)( 100 UND)', '454.000', '2390.34', '2390.34', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1819', 'S.JUMBO FRANK (12 UN)  2.5', '1135.000', '393.00', '982.50', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1813', 'SALCH JUMBO FRANKFURT GRAN/36 UND.(F.ARTIFICIAL)', '454.000', '1683.49', '1683.49', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1670', 'SALCHICHON POLLO       (200  GR)', '200.000', '0.00', '0.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1970', 'SALCHICHON RES            (200  GR)', '200.000', '1157.37', '509.86', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1975', 'SALCHICHON PICANTE    (200  GR)', '200.000', '6452.00', '2842.29', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1980', 'SALCHICHON TUBO PICANTE (MANGUERA GRANEL)', '454.000', '900.76', '900.76', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1971', 'SALCHICHON TUBO RES (MANGUERA GRANEL)', '454.000', '1633.22', '1633.22', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1655', 'SALCHICHA.  PAVO JUMBO 590', '590.000', '438.00', '569.21', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1810', 'SALCH- FRANKFORT (200 GR)', '200.000', '6095.00', '2685.02', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1227', 'SALAMI  CORTADO PREMIUN PIZZA(1224)/ PARA SUPER', '454.000', '409.70', '1129.70', '2018-09-22', '0');
+INSERT INTO `productos` VALUES ('1290', 'SALCHICHA -  ALEMANA       454', '454.000', '414.00', '414.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1264', 'SALCHICHA-  JUMBO  908', '908.000', '233.00', '466.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1232', 'PEPERONI 454 GR', '454.000', '183.00', '183.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1230', 'PEPERONI GRANEL', '454.000', '976.93', '976.93', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1243', 'SALCH- DESAYUNO ESPECIAL (GRANEL)', '454.000', '358.72', '358.72', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1255', 'SALCH- PARRILLERA (360GR)', '360.000', '1453.00', '1152.16', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1292', 'SALCH- ALEMANA GRANEL', '454.000', '0.00', '0.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1257', 'SALCH-PARRILLERA (GRANEL)', '454.000', '203.64', '203.64', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1270', 'SALCHICHA MUNICH (454 GR)', '454.000', '525.00', '525.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1272', 'SALCHICHA MUNICH GRANEL', '454.000', '173.66', '173.66', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1820', 'SALCHICHA FRANKFURT 454 GR', '454.000', '1850.00', '1850.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1233', 'SALAMI PREMIUM 454 GR', '454.000', '7.00', '7.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1254', 'SALCHICHA PARRILLERA 454 GR', '454.000', '118.00', '118.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1204', 'SALCHICHA HOT DOG 454GR', '454.000', '3617.00', '3617.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1245', 'SALCHICHA DESAYUNO PSMAT', '1000.000', '296.00', '651.98', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1241', 'SALCHICHA DESAYUNO DE POLLO', '454.000', '213.44', '213.44', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1269', 'SALCHICHA SUPER JUMBO 1.3', '1300.000', '518.70', '1485.26', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1279', 'Salchicha Jumbo 2.3', '1044.200', '165.00', '379.50', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1805', 'SALCHICHÓN POPULAR FF RISTRA (P. NUEVO)', '200.000', '179.00', '78.85', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1334', 'JAMON POPULAR  (LIBRA.)', '454.000', '0.00', '0.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1335', 'JAMON PIC NIC (125 GR)', '125.000', '3970.00', '1093.06', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1336', 'JAMON POPULAR (227 GR)', '227.000', '2909.00', '1454.50', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1345', 'JAMON PRENSADO (125 GR)', '125.000', '7298.00', '2009.36', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1620', 'JAMON POLLO    (150 GR.)', '150.000', '1926.00', '636.34', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1373', 'JAMON PRENSADO (LIBRA)', '454.000', '715.00', '715.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1630', 'JAMON PAVO', '454.000', '1166.00', '1166.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1363', 'JAMON VIRGINIA (PSMT)', '1300.000', '237.00', '678.63', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1341', 'JAMON PRENSADO  (PIEZA)', '454.000', '1056.66', '1056.66', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1370', 'JAMON PAVO GRANEL', '454.000', '271.89', '271.89', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1621', 'JAMON POLLO           (PIEZA)', '454.000', '350.20', '350.20', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1321', 'JAMON PIERNA          (PIEZA)', '454.000', '454.13', '454.13', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1325', 'JAMON PIERNA 454', '454.000', '295.00', '295.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1353', 'JAMON PRENSADO CORTADO Y ARMADO', '454.000', '1180.00', '1180.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1643', 'JAMON DE POLLO DELMOR 454 GR', '454.000', '1560.00', '1560.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1379', 'JAMON PRENSADO PIZZA', '454.000', '70.00', '70.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1303', 'JAMON PRENSADO PIZZA CORTADO Y ARMADO', '454.000', '365.00', '365.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1401', 'CHORIZO CRIOLLO (227 GR)', '227.000', '3765.00', '1882.50', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1402', 'CHORIZO CRIOLLO (GRANEL)', '454.000', '415.62', '415.62', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1403', 'CHORIZO CRIOLLO (454 GR)', '454.000', '3281.00', '3281.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1404', 'CHORIZO CRIOLLO 5LB', '454.000', '72.00', '72.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1421', 'CHORIZO ESPAÑOL  (GRANEL)', '454.000', '139.47', '139.47', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1473', 'CHORIZO ARGENTINO (GRANEL )', '454.000', '565.15', '565.15', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1470', 'CHORIZO ARGENTINO (454 GR )', '454.000', '101.00', '101.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1502', 'CARNE MOLIDA POLLO    (LIBRA)', '454.000', '5681.00', '5681.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1503', 'CARNE MOLIDA RES         (LIBRA)', '454.000', '5033.00', '5033.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1504', 'CARNE MOLIDA CERDO   (LIBRA)', '454.000', '147.00', '147.00', '2018-09-22', null);
+INSERT INTO `productos` VALUES ('1486', 'TORTA DE CARNE DE RES CLASICA', '500.000', '158.00', '174.01', '2018-09-22', null);
 
 -- ----------------------------
 -- Table structure for productos_copy
@@ -2127,7 +2162,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 -- View structure for view_devoluciones
 -- ----------------------------
 DROP VIEW IF EXISTS `view_devoluciones`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_devoluciones` AS select `devoluciones`.`FechaEntrega` AS `FechaEntrega`,sum(`devoluciones`.`Total`) AS `Total`,sum(`devoluciones`.`Libras`) AS `Libras`,`devoluciones`.`FechaCreacion` AS `FechaCreacion` from `devoluciones` group by `devoluciones`.`FechaEntrega` order by `devoluciones`.`FechaEntrega` desc ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_devoluciones` AS select `devoluciones`.`FechaEntrega` AS `FechaEntrega`,sum(`devoluciones`.`CantDev`) AS `CantDev`,sum(`devoluciones`.`Libras`) AS `Libras`,`devoluciones`.`FechaCreacion` AS `FechaCreacion` from `devoluciones` group by `devoluciones`.`FechaEntrega` order by `devoluciones`.`FechaEntrega` desc ;
 
 -- ----------------------------
 -- View structure for view_masvendidos
@@ -2163,7 +2198,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 -- View structure for view_productos
 -- ----------------------------
 DROP VIEW IF EXISTS `view_productos`;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_productos` AS select `productos`.`Codigo` AS `Codigo`,`productos`.`Descripcion` AS `Descripcion`,`productos`.`GRM` AS `GRM`,`productos`.`Saldo` AS `Saldo`,(select sum(`productos`.`Saldo`) from `productos`) AS `Total`,`productos`.`Estado` AS `Estado` from `productos` ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `view_productos` AS select `productos`.`Codigo` AS `Codigo`,`productos`.`Descripcion` AS `Descripcion`,`productos`.`GRM` AS `GRM`,`productos`.`Saldo` AS `Saldo`,`productos`.`Libras` AS `Libras`,(select sum(`productos`.`Saldo`) from `productos`) AS `Total`,`productos`.`Estado` AS `Estado` from `productos` ;
 
 -- ----------------------------
 -- View structure for view_remision_listaconsol
@@ -2358,7 +2393,6 @@ SELECT
 	o.FechaEntrega
 FROM
 	consolidado o
-JOIN consolidado_s os ON o.FechaEntrega = os.FechaEntrega
 GROUP BY
 	o.FechaEntrega
 ORDER BY

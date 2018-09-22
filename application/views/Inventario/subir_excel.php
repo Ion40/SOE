@@ -78,6 +78,7 @@
 														<th>Descripción</th>
 														<th>Grm</th>
 														<th>Saldo</th>
+														<th>Libras</th>
 														<th>Acciones</th>
 													</tr>
 												';
@@ -88,6 +89,7 @@
 														<th>Descripción</th>
 														<th>Grm</th>
 														<th>Saldo</th>
+														<th>Libras</th>
 														<th>Estado</th>
 													</tr>
 												';
@@ -122,14 +124,16 @@
 															<td>".$key["Codigo"]."</td>
 															<td>".$key["Descripcion"]."</td>
 															<td>
-															  <input id='editgrm".$key["Codigo"]."' style='display:none;' class='".$key["Codigo"]."' name='editgrm' type='text' value=".$key["GRM"].">
-															  <input id='codigoedit' name='codigoedit'  type='hidden' value=''>
-															  <p class='ocult".$key["Codigo"]."'>".$key["GRM"]."</p>
+															  <p>".$key["GRM"]."</p>
 															</td>
 															<td>
-															   <input type='text' name='editsaldo' class='editar".$key["Codigo"]."' id='editsaldo".$key["Codigo"]."' style='display:none;' value=".number_format($key["Saldo"],2).">
+															  <input id='codigoedit' name='codigoedit'  type='hidden' value=''>
+															   <input type='text' name='editsaldo' class='editar".$key["Codigo"]."' id='editsaldo".$key["Codigo"]."' style='display:none;' value=".$key["Saldo"].">
 															   <p class='ocult".$key["Codigo"]."'>".number_format($key["Saldo"],2)."</p>
-															</td>";
+															</td>
+															<td>
+															<input type='text' name='editlibras' class='editar".$key["Codigo"]."' id='editlibras".$key["Codigo"]."' style='display:none;' value=".$key["Libras"].">
+															<p class='ocult".$key["Codigo"]."'>".$key["Libras"]."</p></td>";
 																if ($this->session->userdata("RolUser") == 2
 																	|| $this->session->userdata("RolUser") == 3 || $this->session->userdata("RolUser") == 4
 																	|| $this->session->userdata("RolUser") ==5  || $this->session->userdata("RolUser") == 7
@@ -167,10 +171,14 @@
 										<p style="font-weight:bold; margin-bottom:-15px;" id="total" class="center">
 											<?php
 											  $total = 0;
-												foreach ($prod as $key) {
-													$total = $key["Total"];
+												if (!$prod) {
+													echo $total;
+												} else {
+													foreach ($prod as $key) {
+														$total = $key["Total"];
+													}
+													echo number_format($total,2);
 												}
-												echo number_format($total,2);
 											?>
 										</p>
 									</div>

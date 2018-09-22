@@ -222,9 +222,7 @@
                                 <li>
                                     <a href="Devoluciones">Devoluciones</a>
                                 </li>
-                                <li>
-                                    <a href="ListConsolidado">Consolidado</a>
-                                </li>
+                                
                                 <li>
                                     <a href="javascript:void(0)" class="contraseña">Cambiar Contraseña</a>
                                 </li>

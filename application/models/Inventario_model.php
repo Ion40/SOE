@@ -19,7 +19,8 @@ class Inventario_model extends CI_Model
                 "Codigo" => $objExcel->getActiveSheet()->getCell("A".$i)->getCalculatedValue(),
                 "Descripcion" => $objExcel->getActiveSheet()->getCell("B".$i)->getCalculatedValue(),
                 "GRM" => $objExcel->getActiveSheet()->getCell("C".$i)->getCalculatedValue(),
-                "Saldo" => $objExcel->getActiveSheet()->getCell("D".$i)->getCalculatedValue(),
+				"Saldo" => $objExcel->getActiveSheet()->getCell("D".$i)->getCalculatedValue(),
+				"Libras" => $objExcel->getActiveSheet()->getCell("E".$i)->getCalculatedValue(),
                 "FechaCarga" => $fecha
             ));
             $i++;
@@ -39,13 +40,13 @@ class Inventario_model extends CI_Model
        return 0;
    }
 
-   public function actualizarProd($id,$grm,$saldo)
+   public function actualizarProd($id,$saldo,$lbs)
    {
        $this->db->where("Codigo",$id);
        $data = array(
            "Codigo" => $id,
-           "GRM" => $grm,
-           "Saldo" => $saldo
+		   "Saldo" => $saldo,
+		   "Libras" => $lbs
        );
        $this->db->update("productos",$data);
    }
@@ -70,7 +71,7 @@ class Inventario_model extends CI_Model
 						"Codigo" => $objExcel->getActiveSheet()->getCell("A".$i)->getCalculatedValue(),
 						"Descripcion" => $objExcel->getActiveSheet()->getCell("B".$i)->getCalculatedValue(),
 						"GR" => $objExcel->getActiveSheet()->getCell("C".$i)->getCalculatedValue(),
-						"Total" => $objExcel->getActiveSheet()->getCell("D".$i)->getCalculatedValue(),
+						"CantDev" => $objExcel->getActiveSheet()->getCell("D".$i)->getCalculatedValue(),
 						"Libras" => $objExcel->getActiveSheet()->getCell("E".$i)->getCalculatedValue(),
 						"FechaEntrega" => $fecha,
 						"FechaCreacion" => date("Y-m-d"),
@@ -119,7 +120,7 @@ class Inventario_model extends CI_Model
 			$json["data"][$i]["Codigo"] = $item["Codigo"];
 			$json["data"][$i]["Descripcion"] = $item["Descripcion"];
 			$json["data"][$i]["GR"] = $item["GR"];
-			$json["data"][$i]["Total"] = number_format($item["Total"],2);
+			$json["data"][$i]["CantDev"] = number_format($item["CantDev"],2);
 			$json["data"][$i]["Libras"] = number_format($item["Libras"],2);
 			$i++;
 		}
@@ -145,12 +146,14 @@ class Inventario_model extends CI_Model
 				$query2 = $this->db->query("select Saldo from productos where Codigo = ".$item["Codigo"]." ");
 				foreach ($query2->result_array() as $key) {
 					$array[$i]["Codigo"] = $item["Codigo"];
-					$array[$i]["Total"] = $item["Total"];
+					$array[$i]["CantDev"] = $item["CantDev"];
+					$array[$i]["Libras"] = $item["Libras"];
 					$i++;
 					$this->db->where("Codigo",$item["Codigo"]);
 					$data = array(
 						"Codigo" => $item["Codigo"],
-						"Saldo" =>  $key["Saldo"] + $item["Total"]
+						"Saldo" =>  $key["Saldo"] + $item["CantDev"],
+						"Libras" =>  $key["Libras"] + $item["Libras"]
 					);
 					$this->db->update("productos",$data);
 				}

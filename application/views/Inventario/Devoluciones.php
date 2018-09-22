@@ -85,7 +85,7 @@
 										echo '
 												   <tr class="tblcabecera">
 														<th>Fecha Entrega</th>
-														<th>Total</th>
+														<th>Cantidad Dev.</th>
 														<th>Libras</th>
 														<th>Fecha Creacion</th>
 														<th>Acciones</th>
@@ -95,7 +95,7 @@
 										echo '
 												   <tr class="tblcabecera">
 														<th>Fecha Entrega</th>
-														<th>Total</th>
+														<th>Cantidad Dev.</th>
 														<th>Libras</th>
 														<th>Fecha Creacion</th>
 													</tr>
@@ -113,7 +113,7 @@
 												echo "
 													<tr>
 													 <td>".$key["FechaEntrega"]."</td>
-													 <td>".number_format($key["Total"],2)."</td>
+													 <td>".number_format($key["CantDev"],2)."</td>
 													 <td>".number_format($key["Libras"],2)."</td>
 													 <td>".$key["FechaCreacion"]."</td>
 												";
@@ -195,7 +195,7 @@
 						   <th>Codigo</th>
 						   <th>Descripcion</th>
 						   <th>GR</th>
-						   <th>Total</th>
+						   <th>Cant Dev</th>
 						   <th>Libras</th>
 					   </tr>
 					</thead>

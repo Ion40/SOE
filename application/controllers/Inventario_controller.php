@@ -57,10 +57,10 @@ class Inventario_controller extends CI_Controller
     public function actualizarProd()
     {
         $codigoedit = $this->input->get_post("codigoedit");
-        $editgrm = $this->input->get_post("editgrm");
-        $editsaldo = $this->input->get_post("editsaldo");
-        $this->Inventario_model->actualizarProd($codigoedit,$editgrm,$editsaldo);
-        echo $codigoedit,$editgrm,$editsaldo;
+		$editsaldo = $this->input->get_post("editsaldo");
+		$editlbs = $this->input->get_post("editlibras");
+        $this->Inventario_model->actualizarProd($codigoedit,$editsaldo,$editlbs);
+        echo $this->db->last_query();
          $this->Usuarios_model->InsertLog($this->session->userdata("id"), $this->session->userdata("NameU"),
         "".$this->session->userdata("NameU")." actualizo el saldo del producto ".$codigoedit." ");
     }

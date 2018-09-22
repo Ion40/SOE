@@ -190,8 +190,8 @@ function editar(id) {
         $("#update"+data[0]).click(function(){
             var form_data = {
             	codigoedit: $("#codigoedit").val(), 
-            	editgrm: $("#editgrm"+data[0]).val(),
-            	editsaldo: $("#editsaldo"+data[0]).val()
+            	editsaldo: $("#editsaldo"+data[0]).val(),
+				editlibras: $("#editlibras"+data[0]).val()
             };
             $.ajax({
             	url: "ActualizarProd",
@@ -261,7 +261,7 @@ function DetallesDevoluciones(fecha) {
 			{"data" : "Codigo"},
 			{"data" : "Descripcion"},
 			{"data" : "GR"},
-			{"data" : "Total"},
+			{"data" : "CantDev"},
 			{"data" : "Libras"}
 		]
 	} );

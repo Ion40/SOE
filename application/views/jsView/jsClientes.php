@@ -64,8 +64,7 @@ $("#guardarClient").on("click", function () {
 	});
 	fin = selected.length - 1; // calculo cantidad de caracteres menos 1 para eliminar la coma final
 	selected = selected.substr(0, fin); // elimino la coma final
-
-	alert(selected);
+	
 	var form_data = {
 		nombre: $("#nombre").val(),
 		ruta: selected
