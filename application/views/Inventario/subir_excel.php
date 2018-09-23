@@ -36,9 +36,21 @@
 							</div>
 			            </div>
 					';	
+
+					echo '
+  						<div class="alert-warning" role="alert">
+  				 <p class="text-left" style="font-weight: bold; margin-top: -3px">
+  				    <i class="left material-icons">info</i> Importante!
+  				 </p>
+  				 <p style="text-align: justify;">
+  				 	Antes de subir un nuevo archivo excel asegurese que los nombres o descripción
+  				 	de los artículos no contengan comas (,) ya que produciría un error en la carga del archivo
+  				 </p>
+            </div>
+					';
 				}				
 			?>
-			<br>
+            <br>
             <br>
             
 			<h4 class="center" style="color:black;">Inventario físico de productos terminados</h4>

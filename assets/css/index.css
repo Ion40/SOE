@@ -675,3 +675,10 @@ select .select-dropdown{
     width: 1100px !important;
     height: 2000px !important;
 }
+
+.alert-warning{
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    padding: 10px 10px;
+}
